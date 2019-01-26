@@ -135,7 +135,7 @@ while True:
             else:
                 if full_board_check(the_board):
                     display_board(the_board)
-                    print('TIE GAME')
+                    print('TIE GAME oops')
                     game_on = False
                 else:
                     turn = 'Player 1'
