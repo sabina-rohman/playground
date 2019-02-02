@@ -1,0 +1,25 @@
+h1{
+	/*color:rgba(0,200,180,1);
+	border-color:purple;
+	border-width: 8px;
+	border-style:solid;*/
+
+	border:8px dotted green;
+}
+
+
+/*width
+color
+style*/
+h4{
+	background:rgb(255,100,80);
+}
+body{
+	/*background:pink;*/
+	background:url(https://images-na.ssl-images-amazon.com/images/I/91WdmdW3uOL._SX425_.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+li{
+	color:green;
+}

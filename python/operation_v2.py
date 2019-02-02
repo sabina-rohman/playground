@@ -30,15 +30,13 @@ def play_game():
     print('#########')
 
 
-def show_result(user_num_1,user_num_2,do_operation):
-    if do_operation == '+':
-        print(user_num_1 + user_num_2)
-    elif do_operation == '-':
-        print(user_num_1 - user_num_2)
-    elif do_operation == '/':
-        print(user_num_1 / user_num_2)
-    elif do_operation == '*':
-        print(user_num_1 * user_num_2)
+#def show_result(user_num_1,user_num_2,do_operation):
+ #   if do_operation == '+':
+  #      print(user_num_1 + user_num_2)
+   # elif do_operation == '-':
+    #    print(user_num_1 / user_num_2)
+    #elif do_operation == '*':
+     #   print(user_num_1 * user_num_2)
 
 
 def replay():
@@ -60,6 +58,8 @@ def calculate(input):
         return float(input_list[0]) * float(input_list[1])
     else:
         return 'NONSENSE'
+
+
 
 
 def main():
