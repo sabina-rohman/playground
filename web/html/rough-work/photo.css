@@ -1,6 +1,19 @@
-#one{
-	background:red;
+p{
+	font-family: Staatliches;
+
+	margin-left:1.66%;
+	font-size:23px;
+	font-weight:800;
+	text-transform:uppercase;
+	border-bottom:2px solid #f1f1f1;
+	width:30%;
+	padding-bottom: 20px;
 }
-#two{
-	background:purple;
+p:hover{
+	color:blue;
+}
+img{
+	width: 30%;
+	float:left;
+	margin:1.66%;
 }
