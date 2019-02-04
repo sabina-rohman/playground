@@ -13,7 +13,7 @@ def get_operation():
     return my_operation
 
 
-def play_game():
+def play_game_now():
     print('\n'*100)
     print('############')
     print('############')
@@ -43,7 +43,7 @@ def show_result(user_num_1,user_num_2,do_operation):
 def main():
     keep_playing = True
     while keep_playing:
-        play_game()
+        play_game_now()
         print('\n\n')
 
         keep_playing = input('Do you want to play again? Yes or No: ').upper().startswith('Y')
