@@ -21,3 +21,7 @@ body{
 .thumbnail {
   height: 100%;
 }
+/*.flex {
+  display: flex;
+  flex-wrap: wrap;
+}*/
