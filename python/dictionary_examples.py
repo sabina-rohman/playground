@@ -1,8 +1,8 @@
 # fruit_prices = {'apple':2.99,'orange':4.89}
 # fruit_stock ={'apple':30, 'orange':40}
 # fruit_color = {'apple':'red' , 'orange':'orange'}
-fruit_name = 'Orange'.lower()
-#
+fruit_name =input('Please choose a fruit: ').lower()
+
 # try:
 #     price = fruit_prices[fruit_name]
 #     amount = fruit_stock[fruit_name]
@@ -22,6 +22,8 @@ apple = Fruit('apple',2.99,30,'red')
 orange = Fruit('orange',3.99,40,'orange')
 fruits = {'apple':apple, 'orange':orange}
 
-
-fruit_instance = fruits[fruit_name]
-print(f"Fruit = {fruit_name}, Amount = {fruit_instance.fruit_stock}, Price = {fruit_instance.fruit_prices}, Color = {fruit_instance.fruit_color} ")
+try:
+    fruit_instance = fruits[fruit_name]
+    print(f"Fruit = {fruit_name}, Amount = {fruit_instance.fruit_stock}, Price = {fruit_instance.fruit_prices}, Color = {fruit_instance.fruit_color} ")
+except:
+    print(f'{fruit_name.title()} is out of stock')
