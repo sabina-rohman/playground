@@ -1,5 +1,5 @@
 body{
-	background-image:url(https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/15941056_1226690254077726_3161465447738567436_n.jpg?_nc_cat=106&_nc_ht=scontent-lhr3-1.xx&oh=c5fb6137f23f205d210c53ad9ca0422f&oe=5CF493DD);
+	background-image:url(https://image.shutterstock.com/image-photo/beautiful-peach-blossom-tibet-green-260nw-94476640.jpg);
 	background-size:cover;
 	background-position:center;
 	font-family: Bree Serif;
@@ -9,9 +9,11 @@ html{
 	height:100%;
 
 }
+
+}
 #content{
 	text-align: center;
-	padding-top:25%;
+	padding-top:10%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				0px 8px 13px rgba(0,220,0,0.1),
 				0px 18px 23px rgba(0,0,230,0.2);
