@@ -1,11 +1,13 @@
 h1{
 	color:rgba(0,200,100,0.8);
+	border:8px dashed rgb(255,100,80);
 }
 h4{
 	background: rgb(255,100,80);
 }
 body{
-	background:url(https://www.arthouse.com/wp-content/uploads/2018/02/610806-WOODGRAIN-.jpg);
+	background: pink;
+	/*background:url(https://www.arthouse.com/wp-content/uploads/2018/02/610806-WOODGRAIN-.jpg);
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size:cover;*/
 }
