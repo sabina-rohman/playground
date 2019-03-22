@@ -9,9 +9,9 @@
     <form class="" action="index.html" method="post">
       <div class="">
         <label for="first">First Name:</label>
-        <input id="first" type="text" name="" value="John" placeholder="First name" required>
+        <input id="first" type="text" name="first" value="" placeholder="John" required>
         <label for="second">Last Name:</label>
-        <input id="second" type="text" name="" value="Smith" placeholder="Second name" required>
+        <input id="second" type="text" name="last" value="" placeholder="Smith" required>
       </div>
       <div class="">
         <label for="male">Male</label>
@@ -24,9 +24,10 @@
       </div>
       <div class="">
         <label for="email">Email:</label>
-        <input id="email" type="email" name=" email" value="your email" placeholder="your email" required>
+        <input id="email" type="email" name="email"  placeholder="your email" required>
         <label for="password">Password:</label>
-        <input type="password" name="" value="your password" placeholder="your password" required>
+        <input type="password" name="password"  placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+
 
       </div>
 
