@@ -3,6 +3,9 @@
   background-repeat: no-repeat;
 	background-size:cover;
 }
+#gallery{
+	background:#b8c4dd;
+}
 .image {
 width: 100%;
 height: 250px;
