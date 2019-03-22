@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
 	background-size:cover;
 }
+.blue{
+  font-family: Oswald;
+  color:#2f5591;
+}
 #gallery{
 	background:#b8c4dd;
 }
