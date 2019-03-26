@@ -24,7 +24,9 @@ background-position: center;
 #green{
   color:#1ece33;
 }
-
+#big{
+  font-size: 2.0em;
+}
 .slideshow{
   width: 100%;
   height: auto 200px;
