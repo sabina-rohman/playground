@@ -17,3 +17,6 @@ class Card:
             return 1
         else:
             return int(self.number)
+
+    def __str__(self):
+        return self.number + " of " + self.symbol
