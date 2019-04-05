@@ -1,3 +1,4 @@
+from random import shuffle
 from card import Card
 
 class Deck:
@@ -59,11 +60,17 @@ class Deck:
        self.cards.append(Card('K', 'D'))
        self.cards.append(Card('A', 'D'))
 
-   def get_number_of_cards(self):
-       return len(self.cards)
+       #shuffle(self.cards)
 
-   def is_card_available(self,number,symbol):
+   def contains(self, number, symbol):
        for i in self.cards:
            if i.get_number() == number and i.get_symbol() == symbol:
                return True
        return False
+
+   def pop(self):
+       popped_card = self.cards.pop()
+       return popped_card
+
+   def __len__(self):
+       return len(self.cards)
