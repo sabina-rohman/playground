@@ -76,9 +76,11 @@ class TestDeck(TestCase):
 
     def test_deck_pops_card(self):
         mydeck = Deck()
+        #pop 1 card and check
         popped_card = mydeck.pop()
         self.assertEqual(51, len(mydeck))
         self.assertEqual(False, mydeck.contains(popped_card.get_number(),popped_card.get_symbol()))
+        #pop 2nd card and check
         popped_card = mydeck.pop()
         self.assertEqual(50, len(mydeck))
         self.assertEqual(False, mydeck.contains(popped_card.get_number(), popped_card.get_symbol()))

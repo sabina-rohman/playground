@@ -63,8 +63,8 @@ class Deck:
        #shuffle(self.cards)
 
    def contains(self, number, symbol):
-       for i in self.cards:
-           if i.get_number() == number and i.get_symbol() == symbol:
+       for card in self.cards:
+           if card.get_number() == number and card.get_symbol() == symbol:
                return True
        return False
 
