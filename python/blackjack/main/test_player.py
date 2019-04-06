@@ -8,4 +8,7 @@ class TestPlayer(TestCase):
         #when
         self.assertEqual(1000, my_player.get_balance())
 
-    def test_user_starting_value(self):
+    def test_user_has_zero_starting_value(self):
+        my_player = Player(1000)
+        # when
+        self.assertEqual(0, my_player.get_value())
