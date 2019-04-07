@@ -3,6 +3,7 @@ class Player:
         self.balance = balance
         self.cards = []
         self.bet_value = 0
+        self.is_busted = False
 
     def get_balance(self):
         return self.balance
@@ -22,10 +23,22 @@ class Player:
             raise Exception('Bet value cannot be greater than balance')
         else:
             self.bet_value = bet_value
+        self.cards = []
 
 
     def won_the_game(self):
         self.balance += self.bet_value
+        self.is_busted = False
 
     def lost_the_game(self):
         self.balance -= self.bet_value
+        self.is_busted = True
+
+    def has_busted(self):
+        return self.is_busted
+
+    def __str__(self):
+       result = f'Player:(Value = {self.get_value()})\n'
+       for card in self.cards:
+           result = result + str(card) + '\n'
+       return result

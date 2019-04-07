@@ -60,7 +60,7 @@ class Deck:
        self.cards.append(Card('K', 'D'))
        self.cards.append(Card('A', 'D'))
 
-       #shuffle(self.cards)
+       shuffle(self.cards)
 
    def contains(self, number, symbol):
        for card in self.cards:
