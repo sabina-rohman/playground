@@ -15,8 +15,15 @@ class Processor:
             # Set up the Player's chips
 
             # Prompt the Player for their bet
-            player_bet = int(input(f'Place your bet(Balance = {player.get_balance()}): '))
-            player.place_bet(player_bet)
+            while True:
+                try:
+                    player_bet = int(input(f'Place your bet(Balance = {player.get_balance()}): '))
+                    player.place_bet(player_bet)
+                    break
+                except Exception as ex:
+                    print(ex)
+                    print('\n')
+
             # Show cards (but keep one dealer card hidden)
             card1 = deck.pop()
             card2 = deck.pop()
@@ -33,6 +40,7 @@ class Processor:
             print(dealer)
 
             playing = True
+            player_has_won = 'S'
 
             while playing:  # recall this variable from our hit_or_stand function
 
@@ -45,11 +53,11 @@ class Processor:
                     print(player)
                     # If player's hand exceeds 21, run player_busts() and break out of loop
                     if player.get_value() > 21:
-                        player.lost_the_game()
+                        player_has_won = 'F'
                         print(f'YOU ARE BUSTED.(Value = {player.get_value()} > 21)')
                         playing = False
                     elif player.get_value() == 21:
-                        player.won_the_game()
+                        player_has_won = 'T'
                         playing = False
                 elif player_choice == 's':
                     playing = False
@@ -60,7 +68,7 @@ class Processor:
                 dealer_playing = True
                 while dealer_playing:
                     if dealer.get_value() > 21:
-                        player.won_the_game()
+                        player_has_won = 'T'
                     if dealer.get_value() >= 17:
                         dealer_playing = False
                     else:
@@ -72,14 +80,23 @@ class Processor:
             print(dealer.print_everything())
 
             # Run different winning scenarios
-            if player.get_value() <= 21 and player.get_value() > dealer.get_value():
+            if player_has_won == 'T':
                 player.won_the_game()
                 print('YOU HAVE WON')
-            elif dealer.get_value() <= 21 and dealer.get_value() > player.get_value():
+            elif player_has_won == 'F':
                 player.lost_the_game()
-                print('DEALER HAS WON')
-            elif player.get_value() == dealer.get_value():
-                print("IT'S A TIE")
+                print('YOU HAVE LOST')
+            else:
+                if player.get_value() > dealer.get_value():
+                    player.won_the_game()
+                    print('YOU HAVE WON')
+                elif player.get_value() < dealer.get_value():
+                    player.lost_the_game()
+                    print('YOU HAVE LOST')
+                elif player.get_value() == dealer.get_value():
+                    print("IT'S A TIE")
+
+
             # Inform Player of their chips total
             print(f'Your new balance is {player.get_balance()}')
             # Ask to play again

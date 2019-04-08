@@ -9,16 +9,29 @@ class Player:
         return self.balance
 
     def get_value(self):
-        #TODO-Handle ace later
+       #remove A from list and keep a count of it
+        new_list = []
+        count_a = 0
+        for index in range(len(self.cards)):
+            if self.cards[index].get_number() == 'A':
+                count_a += 1
+            else:
+                new_list.append(self.cards[index])
+
+        #sum all the cards other than A
         sum = 0
-        for card in self.cards:
+        for card in new_list:
             sum = sum + card.get_value()
-        return sum
+
+        #add A accordingly
+
 
     def accept_card(self,card):
         self.cards.append(card)
 
     def place_bet(self,bet_value):
+        if bet_value <= 0:
+            raise Exception('Bet value cannot be negative')
         if bet_value > self.balance:
             raise Exception('Bet value cannot be greater than balance')
         else:
