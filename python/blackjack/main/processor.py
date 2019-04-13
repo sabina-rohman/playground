@@ -37,7 +37,7 @@ class Processor:
             dealer.accept_card(card4)
 
             print(player)
-            print(dealer)
+            print(dealer.print_with_onecard_hidden())
 
             playing = True
             player_has_won = 'S'
@@ -77,7 +77,7 @@ class Processor:
 
             # Show all cards
             print(player)
-            print(dealer.print_everything())
+            print(dealer)
 
             # Run different winning scenarios
             if player_has_won == 'T':

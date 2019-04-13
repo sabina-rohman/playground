@@ -1,26 +1,12 @@
-class Dealer:
+from base_user import BaseUser
+
+class Dealer(BaseUser):
     def __init__(self):
-        self.cards = []
-
-    def get_value(self):
-        # TODO-Handle ace later
-        sum = 0
-        for card in self.cards:
-            sum = sum + card.get_value()
-        return sum
-
-    def accept_card(self, card):
-        self.cards.append(card)
+        BaseUser.__init__(self,'Dealer')
 
 
-    def print_everything(self):
-        result = f'Dealer:(Value = {self.get_value()})\n'
-        for card in self.cards:
-            result = result + str(card) + '\n'
-        return result
 
-
-    def __str__(self):
+    def print_with_onecard_hidden(self):
         result = 'Dealer:\n'
         found_hidden = False
         for card in self.cards:

@@ -14,7 +14,7 @@ class Card:
         if self.number in ['K', 'Q', 'J']:
             return 10
         elif self.number == 'A':
-            return 1
+            return 11
         else:
             return int(self.number)
 
