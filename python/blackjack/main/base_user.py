@@ -14,13 +14,13 @@ class BaseUser:
             result = result + str(card) + '\n'
         return result
 
-    def adjust_ace(self,n,sum):
-        for i in range(n):
-            if sum > 21:
-                sum = sum - 10
+    def adjust_ace(self, no_of_ace, unadjusted_sum):
+        for i in range(no_of_ace):
+            if unadjusted_sum > 21:
+                unadjusted_sum = unadjusted_sum - 10
             else:
                 break
-        return sum
+        return unadjusted_sum
 
 
     def get_count_ace(self):
