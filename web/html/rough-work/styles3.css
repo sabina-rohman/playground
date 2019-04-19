@@ -1,0 +1,46 @@
+p{
+  font-family:Arial;
+
+}
+h1 {
+  font-family:Margarine;
+
+
+}
+/* p {
+  font-size:40px;
+  } */
+body{
+  font-size:10px;
+}
+h1{
+  font-size: 5.0em;
+}
+p{
+  font-size: 2.0em;
+  font-family:Pacifico;
+
+}
+span{
+    font-size: 2.0em;
+  }
+
+/* font-weight */
+p{
+  font-weight:bold;
+}
+/* lineheight */
+p{
+  line-height:1.5;
+}
+/* text-align */
+h1{
+  text-align:right;
+}
+/* text-decoration */
+p{
+  text-decoration: underline;
+}
+h1 {
+  text-decoration:line-through;
+}

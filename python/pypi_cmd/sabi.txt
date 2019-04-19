@@ -1,0 +1,29 @@
+ Volume in drive C is Acer
+ Volume Serial Number is 7244-01B8
+
+ Directory of c:\Users\Sabina\Desktop
+
+05/03/2019  11:51    <DIR>          .
+05/03/2019  11:51    <DIR>          ..
+18/02/2019  19:36             2,250 Atom.lnk
+05/03/2019  11:19                 6 beef.txt
+10/02/2019  21:19             2,180 Dashlane Password Manager.lnk
+10/02/2019  20:13             2,336 Google Chrome.lnk
+04/03/2019  20:59    <DIR>          ManilaPackage
+19/02/2019  19:04    <DIR>          MyMainPackage
+24/02/2019  19:35    <DIR>          MyMainPackage22
+19/02/2019  16:35                44 mymodule.py
+04/03/2019  20:44                49 mymodule33.py
+24/02/2019  19:33                50 mymodule_22.py
+19/02/2019  17:08               156 mypackage.py
+04/03/2019  20:58               144 myprogram33.py
+24/02/2019  19:34               172 myprogram_22.py
+24/02/2019  11:36               205 one.py
+05/03/2019  11:51                 0 sabi.txt
+24/02/2019  20:33                63 sabina.py
+05/03/2019  11:07                14 test.bat
+24/02/2019  20:31               211 trader.py
+24/02/2019  11:32               180 two.py
+04/03/2019  20:45    <DIR>          __pycache__
+              16 File(s)          8,060 bytes
+               6 Dir(s)  768,039,026,688 bytes free

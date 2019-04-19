@@ -22,7 +22,7 @@ def play_game():
 def calculate(input):
     if '+' in input:
         input_list = input.split('+')
-        return float(input_list[0]) +float(input_list[2]))
+        return float(input_list[0]) +float(input_list[2])
 
     elif '-' in input:
         input_list = input.split('+')
@@ -30,10 +30,10 @@ def calculate(input):
 
     elif '/' in input:
         input_list = input.split('/')
-        return float(input_list[0]) / float(input_list[1])
+        return float(input_list[0]) / float(input_list[2])
     elif '*' in input:
         input_list = input.split('*')
-        return float(input_list[0]) * float(input_list[1])
+        return float(input_list[0]) * float(input_list[2])
     else:
         return 'NONSENSE'
 

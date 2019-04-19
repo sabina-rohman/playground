@@ -1,0 +1,35 @@
+#header{
+  background: url("img/naziapics (6).jpg");
+  background-repeat: no-repeat;
+	background-size:cover;
+}
+.blue{
+  font-family: Oswald;
+  color:#2f5591;
+}
+#gallery{
+	background:#b8c4dd;
+}
+.image {
+width: 100%;
+height: 250px;
+background-size: cover;
+background-position: center;
+}
+
+#orange {
+    color:orange;
+
+}
+#green{
+  color:#1ece33;
+}
+#big{
+  font-size: 2.0em;
+}
+.slideshow{
+  width: 100%;
+  height: auto 200px;
+  background-size: cover;
+  background-position: center;
+}
