@@ -73,4 +73,4 @@ class Deck:
        return popped_card
 
    def __len__(self):
-       return len(self.car ds)
+       return len(self.cards)
