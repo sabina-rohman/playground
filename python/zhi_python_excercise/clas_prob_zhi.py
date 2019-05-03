@@ -10,7 +10,7 @@ class UpperString:
 
 if __name__ == '__main__':
     item = UpperString()
-   # item.get_string()
+    item.get_string()
     print(item.to_upper())
 
 
