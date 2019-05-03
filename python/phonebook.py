@@ -25,13 +25,7 @@ class Phonebook:
 
 
     def search_name(self, name):
-        numbers = []
-        for key in self.__phone_numbers:
-            val_dicty = self.__phone_numbers[key]
-            if val_dicty == name:
-                numbers.append(key)
-        return numbers
-
+        return [key for key in self.__phone_numbers if self.__phone_numbers[key] == name]
 
 
 
@@ -50,5 +44,5 @@ if __name__ == '__main__':
 
     print(phonebook.search_name('Sabina'))
     print(phonebook.search_name('Monsur'))
-    print(phonebook.get_info(4666))
+    #print(phonebook.get_info(4666))
 
