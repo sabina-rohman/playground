@@ -1,4 +1,6 @@
 #Things to learn
+#TODO
 
 1. Regular expression
 2. Big-O-Notation
+3.unicode in strings
