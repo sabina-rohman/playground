@@ -5,7 +5,9 @@ class Order:
         self.items = []
 
     def add_item(self, item):
-        self.items.append(item)
+        if item not in Order.prices:
+            raise Exception(f"Sorry {item} is not served in our restaurent")
+        return self.items.append(item)
 
     def get_items(self):
         return self.items
@@ -25,8 +27,6 @@ class Order:
     def print_receipt(self):
         print(f"Table number : {self.get_table_no()}\n-----------------------------------------")
         for index, item in enumerate(self.get_items()):
-            # print(f"{index+1}: {item} : £{Order.prices[item]}")
-            # print('{0:*^10} | {1:*^10}'.format("Food", "Price"))
             print('{0:<5}   {1:<20}  {2:<5}'.format(index + 1, item, Order.prices[item]))
             print('-----------------------------------------')
         print(f"Net price is:                  {self.get_final_bill()}")
@@ -43,16 +43,5 @@ if __name__ == '__main__':
     order.add_item('Cake')
 
     order.print_receipt()
-    # print(f"Table number : {order.get_table_no()}\n-----------------------------------------")
-    # for index,item in enumerate(order.get_items()):
-    #     # print(f"{index+1}: {item} : £{Order.prices[item]}")
-    #     # print('{0:*^10} | {1:*^10}'.format("Food", "Price"))
-    #     print('{0:<5}   {1:<20}  {2:<5}'.format(index+1, item, Order.prices[item]))
-    #     print('-----------------------------------------')
-    # print(f"Net price is:                  {order.get_final_bill()}")
-    # print('-----------------------------------------')
-    # print(f"VAT price:                     {round(order.get_vat(), 2)}")
-    # print('-----------------------------------------')
-    # print(f"Total price is:                {order.get_final_bill() + round(order.get_vat(), 2)}")
 
 
