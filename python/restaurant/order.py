@@ -1,5 +1,12 @@
+from enum import Enum
+class Menu(Enum):
+    fish_chips = 'Machar jhol'
+    coke = 'Lassi'
+    cake = 'Misti doi'
+
+
 class Order:
-    prices = {'Fish & Chips': 6.99, "Coke": 2.99, "Cake": 4.59}
+    prices = {Menu.fish_chips: 6.99, Menu.coke: 2.99, Menu.cake: 4.59}
     def __init__(self, table_no):
         self.table_no = table_no
         self.items = []
@@ -27,7 +34,7 @@ class Order:
     def print_receipt(self):
         print(f"Table number : {self.get_table_no()}\n-----------------------------------------")
         for index, item in enumerate(self.get_items()):
-            print('{0:<5}   {1:<20}  {2:<5}'.format(index + 1, item, Order.prices[item]))
+            print('{0:<5}   {1:<20}  {2:<5}'.format(index + 1, item.value, Order.prices[item]))
             print('-----------------------------------------')
         print(f"Net price is:                  {self.get_final_bill()}")
         print('-----------------------------------------')
@@ -38,9 +45,9 @@ class Order:
 
 if __name__ == '__main__':
     order = Order(24)
-    order.add_item('Fish & Chips')
-    order.add_item('Coke')
-    order.add_item('Cake')
+    order.add_item(Menu.fish_chips)
+    order.add_item(Menu.coke)
+    order.add_item(Menu.cake)
 
     order.print_receipt()
 
