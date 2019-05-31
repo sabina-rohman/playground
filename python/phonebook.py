@@ -45,4 +45,7 @@ if __name__ == '__main__':
     print(phonebook.search_name('Sabina'))
     print(phonebook.search_name('Monsur'))
     #print(phonebook.get_info(4666))
-
+    print(phonebook.get_info(966))
+    phonebook.remove_phone_number(987)
+    print(phonebook.search_name("Sabina"))
+    print(phonebook.get_info(456))
