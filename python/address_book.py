@@ -30,7 +30,7 @@ class AddressBook:
             # remember that person_info is a list itself.(eg: ["sabina", "barbhuiya", "26 RM66UL"]
             # Address book is a list of lists
             person_address = person_info[2] # eg: "26, RM66UL"
-            person_postcode = person_address.split(',')[1] # eg: RM66UL
+            person_postcode = person_address.split()[1] # eg: RM66UL
             if person_postcode.lower().startswith(postcode):
                 result.append(person_info)
         return result
@@ -58,8 +58,9 @@ if __name__ == "__main__":
     # print(address_book.get_ppl_with_surname("singh"))
 
     # print(address_book.get_ppl_with_same_address("26 rm66ul"))
-    # print(address_book.get_ppl_with_same_postcode("ig3"))
+    print(address_book.get_ppl_with_same_postcode("ig3"))
     print(address_book.search("singh"))
+    print(address_book.search("ig"))
 
 
 
