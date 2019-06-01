@@ -1,13 +1,20 @@
+class Person:
+    def __init__(self, f_name, l_name, address):
+        self.address = address
+        self.l_name = l_name
+        self.f_name = f_name
+
+
 class AddressBook:
 
     def __init__(self):
         self.address_book = []
 
-    def add_person(self,f_name, l_name, address):
-        person = [f_name, l_name, address]
+    def add_person(self, person):
+        # person = [f_name, l_name, address]
         self.address_book.append(person)
 
-    def get_address_book(self):
+    def get_people(self):
         return self.address_book
 
     def get_ppl_with_surname(self, l_name):
@@ -46,21 +53,33 @@ class AddressBook:
 
 if __name__ == "__main__":
     address_book = AddressBook()
-    address_book.add_person("Sabina", "Barbhuiya", "26, RM66UL")
-    address_book.add_person("Aydin", "Mazumdar", "26, RM66UL")
-    address_book.add_person("Monsur", "mazumdar", "26, RM66UL")
+    sabina = Person("Sabina", "Barbhuiya", "26, RM66UL")
+    monsur = Person("Monsur", "mazumdar", "26, RM66UL")
+    aydin = Person("Aydin", "Mazumdar", "26, RM66UL")
+    muskaan = Person("Muskaan", "Singh", "561, IG55PL")
+    umer = Person("Umer", "Farroq", "4, IG34EQ")
+    kirat = Person("Kirat", "Singh", "26, IG34RR")
 
-    address_book.add_person("Muskaan", "Singh", "561, IG55PL")
-    address_book.add_person("Umer", "Farroq", "4, IG34EQ")
-    address_book.add_person("Kirat", "Singh", "26, IG34RR")
+    address_book.add_person(sabina)
+    address_book.add_person(monsur)
+    address_book.add_person(aydin)
+
+    address_book.add_person(muskaan)
+    address_book.add_person(umer)
+    address_book.add_person(kirat)
 
     # print(address_book.get_address_book())
     # print(address_book.get_ppl_with_surname("singh"))
 
     # print(address_book.get_ppl_with_same_address("26 rm66ul"))
-    print(address_book.get_ppl_with_same_postcode("ig3"))
-    print(address_book.search("singh"))
-    print(address_book.search("ig"))
+    # print(address_book.get_ppl_with_same_postcode("ig3"))
+    # print(address_book.search("singh"))
+    # print(address_book.search("ig"))
 
+    # sabina is instance(object of class person) and can access its attributes like f_name, l_name and address
+    print(sabina.f_name)
+    # get_people() gives a list of objects and [0] gives sabina
+    print(address_book.get_people()[0].f_name)
+    print(address_book.get_people()[1] == sabina)
 
 
