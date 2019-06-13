@@ -1,0 +1,6 @@
+How to install something in sublime:
+Package Control
+Installation through package control is recommended. It will handle updating your packages as they become available. To install, do the following.
+
+In the Command Palette, enter Package Control: Install Package
+Search for PackageResourceViewer
