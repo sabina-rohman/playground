@@ -13,7 +13,7 @@ def play_cow_game(hidden_word):
             print(f"You won. {count} attempts were taken.")
             break
         else:
-            print(f"{cow_count} cow, {bull_count} bull")
+            print(f"{cow_count} cow, {bull_count} bull" )
 
 
 
