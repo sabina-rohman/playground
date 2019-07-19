@@ -2,7 +2,7 @@ var button = document.querySelector("button");
 var body = document.querySelector("body");
 var isPurple = false;
 
-// **** class toggle method***
+// **** class toggle method***_/_/_/
 // button.addEventListener("click", function(){
 // 	body.classList.toggle("purple");
 // });
