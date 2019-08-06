@@ -1,8 +1,64 @@
-body{
+/*body{
 	font-family: EB Garamond;
+	background: url("https://purnatur.com/files/content/referenzen/projekte/FVAPalmares0132_pur-natur_Douglasie-Select_28x300_raumlang_massiv.jpg");
 }
 
 p{
 	font-weight: 400px;
 	font-size: 	20px;
+}
+
+@media(max-width:1400px){
+	 body{
+	background: url("https://purnatur.com/files/content/referenzen/projekte/FVAPalmares0132_pur-natur_Douglasie-Select_28x300_raumlang_massiv.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 1400px;
+
+
+}
+}
+
+.arrow{
+		  bottom: -2rem;
+		  left: 50%;
+		  margin-left:-20px;
+		  width: 40px;
+		  height: 40px;
+		  position: absolute;
+		  bottom: 5px;
+		  left: 850px;
+		  
+
+		  /**
+		   * Dark Arrow Down
+		   */
+		  /*background-image: url("https://www.iconsdb.com/icons/preview/white/arrow-188-xxl.png");
+		  background-size: contain;
+		}
+*/
+/*.bounce {
+  	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  }*/*/
+
+  body {
+  background: hotpink;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background: rebeccapurple;
+  }
 }
