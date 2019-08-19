@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cow Bull Game</title>
+	<link rel="stylesheet" type="text/css" href="cow_bull.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+	<div class="jumbotron">
+			<h1>Cow Bull Game</h1>
+			<p class="lead text-center "><i class="fas fa-paw mr-4"></i>Play this fun Moo Game! </p>
+	</div>
+	
+	<div class="container">
+		<div id="hearts" align="right"></div>
+		<div id="form" class="form-group">
+			<input class="form-control" id="userInput" type="text" name="" placeholder="0000"  style="height:200px;font-size:120px;letter-spacing: 0.9rem">
+		</div>
+		
+		<p id="userOutput"></p>
+		<div class="row mt-5">
+			<div class="col-8">
+				<div class="row">
+					<div class="col-4">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcca_XflfG1Ppfs9U3ZzCBVjTfjhkvKVgEbawwamyrBelW_Gu">
+					</div>
+					<div class="col-8">
+						<p><span  class="ml-3" id="cowDisplay"></span></p>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-4">
+						<p><span  class="ml-3" id="bullDisplay"></span></p>
+					</div>
+					<div class="col-8">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHi2dtFhLgXvBs6o_DNe3lZqSzdb69Vx-rw4z7jDsBzvoLkRF">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="count">Number of Trials: <span id="noOfTrial">0</span></div>
+		<button class="btn btn-primary btn-lg">Restart</button>
+	</div>
+	
+	<script type="text/javascript" src="cow_bull.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

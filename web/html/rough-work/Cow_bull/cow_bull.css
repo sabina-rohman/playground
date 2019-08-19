@@ -1,0 +1,51 @@
+body{
+	font-family: Montserrat;
+}
+
+
+h1{
+	text-align: center; 
+	color:#819cd6;
+	font-weight: bold;
+	font-size: 200px;
+	text-transform: uppercase;
+}
+#hearts{
+	color:red;
+	font-size:30px;
+
+}
+
+#userInput{
+	margin-top: 50px;
+	font-size:100px;
+}
+
+#form{
+	width:30%;
+	margin:20px auto;
+}
+
+#noOfTrial{
+	font-size: 40px;
+}
+
+.cow{
+	font-size:200px;
+	color:green;
+}
+
+.bull{
+	font-size:200px;
+	color:red;
+}
+
+#count{
+	margin-top: 100px;
+	text-align: center;
+}
+
+button{
+	margin:20px auto;
+	text-align: center;
+}
