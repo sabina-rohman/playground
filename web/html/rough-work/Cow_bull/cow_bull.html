@@ -15,9 +15,16 @@
 	</div>
 	
 	<div class="container">
-		<div id="hearts" align="right"></div>
+		<div id="header">
+			<span id="hearts"></span>
+			<i id="restartBtn" class="fas fa-redo-alt"></i>
+		</div>
 		<div id="form" class="form-group">
-			<input class="form-control" id="userInput" type="text" name="" placeholder="0000"  style="height:200px;font-size:120px;letter-spacing: 0.9rem">
+			<input class="form-control" 
+				id="userInput" 
+				type="text" 
+				placeholder="0000"  
+				maxlength="4">
 		</div>
 		
 		<p id="userOutput"></p>
@@ -46,8 +53,7 @@
 			</div>
 		</div>
 		
-		<div id="count">Number of Trials: <span id="noOfTrial">0</span></div>
-		<button class="btn btn-primary btn-lg">Restart</button>
+		
 	</div>
 	
 	<script type="text/javascript" src="cow_bull.js"></script>

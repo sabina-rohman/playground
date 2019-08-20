@@ -13,12 +13,24 @@ h1{
 #hearts{
 	color:red;
 	font-size:30px;
+}
 
+#header{
+	text-align: right;
+	font-size:30px;
+}
+
+
+#hearts > i {
+	margin-right: 10px;
 }
 
 #userInput{
-	margin-top: 50px;
+	margin-top:50px;
 	font-size:100px;
+	height:200px;
+	font-size:120px;
+	letter-spacing:0.9rem;
 }
 
 #form{
@@ -26,9 +38,6 @@ h1{
 	margin:20px auto;
 }
 
-#noOfTrial{
-	font-size: 40px;
-}
 
 .cow{
 	font-size:200px;
@@ -45,7 +54,13 @@ h1{
 	text-align: center;
 }
 
-button{
-	margin:20px auto;
-	text-align: center;
+
+#restartBtn{
+	margin-left: 10px;
+}
+
+#restartBtn:hover {
+	cursor: pointer;
+	font-size: 35px;
+	margin-left: 5px;
 }

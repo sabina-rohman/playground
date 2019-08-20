@@ -1,6 +1,7 @@
 var playing = true;
 var hiddenWord = pickRandomNumber();
-var heartsLeft = 3;
+const TOTAL_HEARTS = 3;
+var heartsLeft;
 
 function isCowBull(userWord, hiddenWord) {
 	var cowCount = 0;
@@ -16,14 +17,23 @@ function isCowBull(userWord, hiddenWord) {
 }
 
 $( document ).ready(function() {
+	addHearts();
+	$("#userInput").focus();
+});
+
+function addHearts(){
+	// When we start the game number of hearts left is full which is the total hearts
+	heartsLeft = TOTAL_HEARTS;
+	// Clear any existing hearts
+	$("#hearts").empty();
 	// Add all the heart in the begining
     for(var i = 0; i < heartsLeft; i++){
     	// step1: Dynamically create the id of each heart. eg: "heart-0, heart-1 etc"
     	var idVal = "heart-" + String(i); 
     	// step2: Append a new heart with a given id
-    	$("#hearts").append("  "+ "<i id='"+ idVal + "' class='fas fa-heart'></i>" + " ");
+    	$("#hearts").append("<i id='"+ idVal + "' class='fas fa-heart'></i>");
     }
-});
+}
 
 $("#userInput").on("keypress", function(event){
 	// step1: wait for user to click enter
@@ -49,11 +59,12 @@ $("#userInput").on("keypress", function(event){
 			$(this).val("");
 		}
 		
-		// step7: Increase the game counter by 1
+		// step7: Decrease the heart counter by 1
 		heartsLeft -= 1;
-		// stap8: Update the no of trial in the html
+		// step8: Update the no of trial in the html
 		// $("#noOfTrial").text(noOfTrial);
-		$("#heart-" + String(heartsLeft)).remove();
+		$("#heart-" + String(heartsLeft)).replaceWith('<i class="far fa-heart"></i>');
+
 		if(heartsLeft === 0){
 			result = "You Lost!"
 		}
@@ -63,12 +74,14 @@ $("#userInput").on("keypress", function(event){
 	}	
 });
 
-$("button").on("click",function(){
-	$("#noOfTrial").text("");
+	
+$("#restartBtn").on("click",function(){
 	$("#cowDisplay").text("");
 	$("#cowDisplay").addClass("cow");
 	$("#bullDisplay").text("");
 	$("#bullDisplay").addClass("bull");
+	// Add all the heart in the begining
+    addHearts();
 	cowCount = 0;
 	bullCount = 0;
 	$("#userOutput").css("display", "none");
