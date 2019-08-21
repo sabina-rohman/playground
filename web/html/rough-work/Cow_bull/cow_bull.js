@@ -2,38 +2,20 @@ var playing = true;
 var hiddenWord = pickRandomNumber();
 const TOTAL_HEARTS = 3;
 var heartsLeft;
+var valuesLeft;
 
-function isCowBull(userWord, hiddenWord) {
-	var cowCount = 0;
-	var bullCount = 0;
-	for(var i = 0; i < userWord.length; i++){
-		if(userWord[i] === hiddenWord[i]) {
-			cowCount += 1;
-		} else if(hiddenWord.includes(userWord[i])){
-			bullCount += 1;
-		}
-	}
-	return [cowCount, bullCount];
-}
 
 $( document ).ready(function() {
 	addHearts();
 	$("#userInput").focus();
 });
 
-function addHearts(){
-	// When we start the game number of hearts left is full which is the total hearts
-	heartsLeft = TOTAL_HEARTS;
-	// Clear any existing hearts
-	$("#hearts").empty();
-	// Add all the heart in the begining
-    for(var i = 0; i < heartsLeft; i++){
-    	// step1: Dynamically create the id of each heart. eg: "heart-0, heart-1 etc"
-    	var idVal = "heart-" + String(i); 
-    	// step2: Append a new heart with a given id
-    	$("#hearts").append("<i id='"+ idVal + "' class='fas fa-heart'></i>");
-    }
-}
+
+// TODO-GOOGLE
+// $(document).on('hidden.bs.modal', '#resultModal', function () {
+//     restart();
+// });
+
 
 $("#userInput").on("keypress", function(event){
 	// step1: wait for user to click enter
@@ -49,13 +31,17 @@ $("#userInput").on("keypress", function(event){
 		var result = ""
 		if(cowCount === 4) {
 			result = "You won.";
-			// $(result).addClass(cow);
+			showWinnerDialog();
 		} else {
 			result = "Try Again! The hidden number is: " + hiddenWord;
 			$("#cowDisplay").text(cowCount);
 			$("#cowDisplay").addClass("cow");
 			$("#bullDisplay").text(bullCount);
 			$("#bullDisplay").addClass("bull");
+
+			var textInput = $("#userInput").val();
+			$("#previousTries").prepend("<div><span class='historyCow'>" + cowCount +"</span><span class='historyValue'>" + textInput + "</span><span class='historyBull'>"+ bullCount + "</span></div>");
+			// addValues();
 			$(this).val("");
 		}
 		
@@ -67,15 +53,66 @@ $("#userInput").on("keypress", function(event){
 
 		if(heartsLeft === 0){
 			result = "You Lost!"
+			showLooserDialog();
 		}
+
 		// step6: Display the result in the output
 		$("#userOutput").css("display", "block");
 		$("#userOutput").text(result);
+
+		
 	}	
 });
 
-	
-$("#restartBtn").on("click",function(){
+
+function isCowBull(userWord, hiddenWord) {
+	var cowCount = 0;
+	var bullCount = 0;
+	for(var i = 0; i < userWord.length; i++){
+		if(userWord[i] === hiddenWord[i]) {
+			cowCount += 1;
+		} else if(hiddenWord.includes(userWord[i])){
+			bullCount += 1;
+		}
+	}
+	return [cowCount, bullCount];
+}
+
+
+function addHearts(){
+	// When we start the game number of hearts left is full which is the total hearts
+	heartsLeft = TOTAL_HEARTS;
+	// Clear any existing hearts
+	$("#hearts").empty();
+	// Add all the heart in the begining
+    for(var i = 0; i < heartsLeft; i++){
+    	// step1: Dynamically create the id of each heart. eg: "heart-0, heart-1 etc"
+    	var idVal = "heart-" + String(i); 
+    	// step2: Append a new heart with a given id
+    	$("#hearts").append("<i id='"+ idVal + "' class='fas fa-heart'></i>");
+    }
+}
+
+
+function showWinnerDialog(){
+	showDialog("You won!", "https://render.fineartamerica.com/images/rendered/square-product/small/images-medium-large-5/champion-cup-vector-icon-adekvat.jpg");
+}
+
+
+function showLooserDialog(){
+	showDialog("You Lost!", "https://cdn3.vectorstock.com/i/thumb-large/60/92/cartoon-dislike-smile-emoticon-vector-5796092.jpg");
+}
+
+function showDialog(header, image){
+	// Set all the winner/looser dialog parameters
+	$("#resultText").text(header);
+	$("#resultImage").attr("src", image);
+	// Show the dialog
+	$('#resultModal').modal('show'); 
+	restart();
+}
+
+function restart(){
 	$("#cowDisplay").text("");
 	$("#cowDisplay").addClass("cow");
 	$("#bullDisplay").text("");
@@ -85,9 +122,17 @@ $("#restartBtn").on("click",function(){
 	cowCount = 0;
 	bullCount = 0;
 	$("#userOutput").css("display", "none");
+	$("#previousTries").empty();
+	$("#userInput").val("");
+}
+
+
+$("#restartBtn").on("click",function(){
+	restart();
 });
 
 function pickRandomNumber(){
-	var random = Math.floor(Math.random() * 9999);
+	var random = Math.floor(Math.random() * (10000 - 1000) + 1000);
 	return String(random);
 }
+

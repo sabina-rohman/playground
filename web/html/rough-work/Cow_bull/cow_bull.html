@@ -3,6 +3,7 @@
 <head>
 	<title>Cow Bull Game</title>
 	<link rel="stylesheet" type="text/css" href="cow_bull.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
@@ -19,42 +20,70 @@
 			<span id="hearts"></span>
 			<i id="restartBtn" class="fas fa-redo-alt"></i>
 		</div>
-		<div id="form" class="form-group">
-			<input class="form-control" 
+
+		<div id="form" >
+			<input  
 				id="userInput" 
 				type="text" 
 				placeholder="0000"  
 				maxlength="4">
 		</div>
-		
-		<p id="userOutput"></p>
-		<div class="row mt-5">
-			<div class="col-8">
-				<div class="row">
-					<div class="col-4">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcca_XflfG1Ppfs9U3ZzCBVjTfjhkvKVgEbawwamyrBelW_Gu">
-					</div>
-					<div class="col-8">
-						<p><span  class="ml-3" id="cowDisplay"></span></p>
-					</div>
-				</div>
-				
-				
+	</div>
+	
+	
+	<div class="row mt-5">
+		<div class="col-3" align="right">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcca_XflfG1Ppfs9U3ZzCBVjTfjhkvKVgEbawwamyrBelW_Gu">
+		</div>
+		<div class="col-1" align="left">
+			<p><span  class="ml-3" id="cowDisplay"></span></p>
+		</div>
+		<div class="col-4" align="center">
+			<div id="previousTries">
+				 
 			</div>
-			<div class="col-4">
-				<div class="row">
-					<div class="col-4">
-						<p><span  class="ml-3" id="bullDisplay"></span></p>
-					</div>
-					<div class="col-8">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHi2dtFhLgXvBs6o_DNe3lZqSzdb69Vx-rw4z7jDsBzvoLkRF">
-					</div>
-				</div>
-			</div>
+			
+		</div>
+		<div class="col-1" align="right">
+			<p><span  class="ml-3" id="bullDisplay"></span></p>
+		</div>
+		<div class="col-3" align="left">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHi2dtFhLgXvBs6o_DNe3lZqSzdb69Vx-rw4z7jDsBzvoLkRF">
 		</div>
 		
-		
 	</div>
+
+	<div>
+		<p id="userOutput"></p>
+	</div>
+
+	<div class="modal fade" id="resultModal" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div id="resultText" class="modal-body">
+         
+        </div>
+        <img id="resultImage" src="">
+        	
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+		
+		
 	
 	<script type="text/javascript" src="cow_bull.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
