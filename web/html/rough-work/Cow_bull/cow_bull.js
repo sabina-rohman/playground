@@ -41,7 +41,7 @@ $("#userInput").on("keypress", function(event){
 			result = "You won.";
 			showWinnerDialog();
 		} else {
-			result = "Try Again! The hidden number is: " + hiddenWord;
+			// result = "Try Again! The hidden number is: " + hiddenWord;
 			$("#cowDisplay").text(cowCount);
 			$("#cowDisplay").addClass("cow");
 			$("#bullDisplay").text(bullCount);
@@ -127,14 +127,16 @@ function showWecomeDialog(){
 }
 
 function restart(){
-	$("#cowDisplay").text("");
-	$("#cowDisplay").addClass("cow");
-	$("#bullDisplay").text("");
-	$("#bullDisplay").addClass("bull");
 	// Add all the heart in the begining
     addHearts();
 	cowCount = 0;
 	bullCount = 0;
+	hiddenWord = pickRandomNumber();
+
+	$("#cowDisplay").text("");
+	$("#cowDisplay").addClass("cow");
+	$("#bullDisplay").text("");
+	$("#bullDisplay").addClass("bull");
 	$("#userOutput").css("display", "none");
 	$("#previousTries").empty();
 	$("#userInput").val("");
@@ -143,6 +145,7 @@ function restart(){
 
 $("#restartBtn").on("click",function(){
 	restart();
+	showWecomeDialog();
 });
 
 function pickRandomNumber(){

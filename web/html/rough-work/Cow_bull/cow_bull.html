@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="cow_bull.css">
 		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
@@ -84,20 +85,23 @@
 					
 					<!-- Modal Header -->
 					<div class="modal-header" id="welcomeModalContent">
-						<h4 class="modal-title">Instructions: </h4>
+						<h4 class="modal-title">Cow Bull Game</h4>
 					</div>
 					
 					<!-- Modal body -->
 					<div class="modal-body">
-						<ul>
-							<li>hfkhjdkfjkldfgj</li>
-							<li>hfkhjdkfjkldfgj</li>
-							<li>hfkhjdkfjkldfgj</li>
+						<h4>Instructions: </h4>
+						<ul style="list-style-type:none;">
+							<li>Guess the 4-digit number. Eg: <span class="instructionNumber">9436</span></li>
+							<li>You earn a cow point for every correct digit and position. Eg:<span class="instructionNumber">2<span class="cowNumber">4</span>1<span class="cowNumber">6</span></span> </li>
+							<li>You earn a bull point for every correct digit but wrong position. Eg: <span class="instructionNumber"><span class="bullNumber">4</span>2<span class="bullNumber">6</span>1</span></li>
+							<li>But be careful! You have limited attempts to get it right.<i class="fas fa-heart" style="color:red"></i></li>
+							<li>HAVE FUN!</li>
 						</ul>
 						<div align="center">
-							<button type="button" id="easyBtn" class="btn btn-secondary welcomeBtn" data-dismiss="modal">Easy</button>
-							<button type="button" id="normalBtn" class="btn btn-secondary welcomeBtn" data-dismiss="modal">Normal</button>
-							<button type="button" id="hardBtn" class="btn btn-secondary welcomeBtn" data-dismiss="modal">Hard</button>
+							<button type="button" id="easyBtn" class="btn btn-success welcomeBtn" data-dismiss="modal">Easy</button>
+							<button type="button" id="normalBtn" class="btn btn-warning welcomeBtn" data-dismiss="modal">Normal</button>
+							<button type="button" id="hardBtn" class="btn btn-danger welcomeBtn" data-dismiss="modal">Hard</button>
 						</div>
 					</div>
 				</div>

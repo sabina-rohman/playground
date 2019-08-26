@@ -9,13 +9,38 @@ background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, F
 }
 
 .welcomeBtn{
-	width:100px;
+	width:120px;
+	font-size: 10px;
 }
 
 #welcomeModalContent {
-   background: cyan;
+   background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
+.instructionNumber{
+	border:1px solid blue;
+	padding:2px;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.cowNumber{
+	color:green;
+}
+
+.bullNumber{
+	color:red;
+}
+
+ .modal-body{
+	font-family:Fjalla One; 
+	line-height: 300%;
+	list-style:none;
+	text-align: center;
+}
 .lead{
 	color:white;
 }
