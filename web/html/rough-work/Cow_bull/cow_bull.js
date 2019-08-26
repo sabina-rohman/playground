@@ -1,21 +1,29 @@
-var playing = true;
 var hiddenWord = pickRandomNumber();
-const TOTAL_HEARTS = 3;
+var totalHearts = 0;
 var heartsLeft;
-var valuesLeft;
 
 
 $( document ).ready(function() {
-	addHearts();
-	$("#userInput").focus();
+	showWecomeDialog();
 });
 
+$("#easyBtn").on("click", function(){
+		startGame(15);
+});
 
-// TODO-GOOGLE
-// $(document).on('hidden.bs.modal', '#resultModal', function () {
-//     restart();
-// });
+$("#normalBtn").on("click", function(){
+		startGame(10);		
+});
 
+$("#hardBtn").on("click", function(){
+		startGame(5);
+});
+
+function startGame(hearts){
+		totalHearts	= hearts;
+		addHearts();
+		$("#userInput").focus();
+}
 
 $("#userInput").on("keypress", function(event){
 	// step1: wait for user to click enter
@@ -64,6 +72,9 @@ $("#userInput").on("keypress", function(event){
 	}	
 });
 
+$("#tryAgainBtn").on("click", function(){
+		restart();
+});
 
 function isCowBull(userWord, hiddenWord) {
 	var cowCount = 0;
@@ -81,7 +92,7 @@ function isCowBull(userWord, hiddenWord) {
 
 function addHearts(){
 	// When we start the game number of hearts left is full which is the total hearts
-	heartsLeft = TOTAL_HEARTS;
+	heartsLeft = totalHearts;
 	// Clear any existing hearts
 	$("#hearts").empty();
 	// Add all the heart in the begining
@@ -95,21 +106,24 @@ function addHearts(){
 
 
 function showWinnerDialog(){
-	showDialog("You won!", "https://render.fineartamerica.com/images/rendered/square-product/small/images-medium-large-5/champion-cup-vector-icon-adekvat.jpg");
+	showResultDialog("You won!" , "https://render.fineartamerica.com/images/rendered/square-product/small/images-medium-large-5/champion-cup-vector-icon-adekvat.jpg");
 }
 
 
 function showLooserDialog(){
-	showDialog("You Lost!", "https://cdn3.vectorstock.com/i/thumb-large/60/92/cartoon-dislike-smile-emoticon-vector-5796092.jpg");
+	showResultDialog("You Lost!The number was: " + "'" + hiddenWord + "'", "https://cdn3.vectorstock.com/i/thumb-large/60/92/cartoon-dislike-smile-emoticon-vector-5796092.jpg");
 }
 
-function showDialog(header, image){
+function showResultDialog(header, image){
 	// Set all the winner/looser dialog parameters
 	$("#resultText").text(header);
 	$("#resultImage").attr("src", image);
 	// Show the dialog
 	$('#resultModal').modal('show'); 
-	restart();
+}
+
+function showWecomeDialog(){
+	$("#welcomeModal").modal('show');
 }
 
 function restart(){
