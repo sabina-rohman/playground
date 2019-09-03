@@ -1,0 +1,75 @@
+* {
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+
+html, body {
+	padding-left: 2vw; 
+	padding-right: 2vw;
+	padding-bottom: 1vw;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: .1vw;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.center {
+	text-align: center;
+}
+
+.info {
+	color: red;
+	text-align: right;
+}
+
+.fill {
+	width: 100%;
+}
+
+.cover {
+    object-fit: cover;
+  	height: 25vw;
+}​
+
+.service {
+    height: 2vw;
+}
+
+.container {
+  position: relative;
+   
+}
+
+.overlay {
+  position: absolute;
+  top: 60%;
+  width:99%;
+  text-align: center; 
+  color: white;
+  background-color: black;
+  position: block;
+  font-size: 1.5vw;
+  opacity: .75;
+}
+
+.phone {
+  height: 2vw;
+  width: 3.5vw;
+  padding-right: 1vw;
+}
