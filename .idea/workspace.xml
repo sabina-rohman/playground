@@ -1,39 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec810ef-824c-46f1-a5d0-e34398aa2cad" name="Default Changelist" comment="" />
+    <list default="true" id="28237e85-01cc-44f6-80cd-26a446adbd5f" name="MyWork" comment="truesilver dummy site - 1st cut">
+      <change beforePath="$PROJECT_DIR$/web/truesilver/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/truesilver/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/truesilver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/truesilver/index.html" afterDir="false" />
+    </list>
+    <list id="6ec810ef-824c-46f1-a5d0-e34398aa2cad" name="dont commit" comment="dont commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playground.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="playground" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/age_year.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/zhi_python_excercise/exception.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="68">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/MyMainPackage/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/queue_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/restaurant/order.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/phonebook.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/address_book.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/rps_prac_python.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/cow_bull.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/rock_paper_scissor.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/op_v2_practice.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
-  <component name="Git.Settings">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2240" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lost_the_game</find>
+      <find>except ex</find>
+      <find>todo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="playground-branch" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/python/tic_prac.py" />
+        <option value="$PROJECT_DIR$/web/html/rough-work/index.html" />
+        <option value="$PROJECT_DIR$/python/school_system/teacher.py" />
+        <option value="$PROJECT_DIR$/python/dictionary_examples.py" />
+        <option value="$PROJECT_DIR$/python/unittesting/example1.py" />
+        <option value="$PROJECT_DIR$/python/unittesting/example1_test.py" />
+        <option value="$PROJECT_DIR$/python/unittesting/tic_prac_again.py" />
+        <option value="$PROJECT_DIR$/python/operator_practice.py" />
+        <option value="$PROJECT_DIR$/python/age_prac_again.py" />
+        <option value="$PROJECT_DIR$/python/guess_no.py" />
+        <option value="$PROJECT_DIR$/python/rps_again.py" />
+        <option value="$PROJECT_DIR$/python/operation_version2_again.py" />
+        <option value="$PROJECT_DIR$/python/time_conversion_test.py" />
+        <option value="$PROJECT_DIR$/python/test_timeConversion.py" />
+        <option value="$PROJECT_DIR$/python/time_conversion.py" />
+        <option value="$PROJECT_DIR$/python/hackerrank/test_countApplesAndOranges.py" />
+        <option value="$PROJECT_DIR$/python/hackerrank/apple_orange.py" />
+        <option value="$PROJECT_DIR$/python/dictionary_fruit.py" />
+        <option value="$PROJECT_DIR$/python/teacher_student.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/test/test_player.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/test/test_dealer.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/test/test_processor.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/test/test_card.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/test_card.py" />
+        <option value="$PROJECT_DIR$/python/youtube_oop.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/test_deck.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/test_player.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/dealer.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/card.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/player.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/base_user.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/processor.py" />
+        <option value="$PROJECT_DIR$/python/generator.py" />
+        <option value="$PROJECT_DIR$/python/iterator.py" />
+        <option value="$PROJECT_DIR$/python/generator_tutorial.py" />
+        <option value="$PROJECT_DIR$/python/new_deck.py" />
+        <option value="$PROJECT_DIR$/python/blackjack/main/deck.py" />
+        <option value="$PROJECT_DIR$/python/zhi_python_excercise/clas_prob_zhi.py" />
+        <option value="$PROJECT_DIR$/python/zhi_python_excercise/exception.py" />
+        <option value="$PROJECT_DIR$/python/MyMainPackage/todo.txt" />
+        <option value="$PROJECT_DIR$/python/queue.py" />
+        <option value="$PROJECT_DIR$/python/queue_data.py" />
+        <option value="$PROJECT_DIR$/python/hotel_management.py" />
+        <option value="$PROJECT_DIR$/python/order.py" />
+        <option value="$PROJECT_DIR$/python/restaurant/order.py" />
+        <option value="$PROJECT_DIR$/python/phonebook.py" />
+        <option value="$PROJECT_DIR$/python/address_book_practice.py" />
+        <option value="$PROJECT_DIR$/python/address_book.py" />
+        <option value="$PROJECT_DIR$/python/rps_prac_python.py" />
+        <option value="$PROJECT_DIR$/git_tutorial/hello.txt" />
+        <option value="$PROJECT_DIR$/python/cow_bull.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1738" />
+    <option name="y" value="105" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -46,11 +213,70 @@
               <item name="playground" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Anaconda3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Anaconda3" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Anaconda3" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="unittest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (playground) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="unittest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chingu-prework-tier1" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sabina\WORK\github\playground\python\restaurant" />
+      <recent name="C:\Users\Sabina\WORK\github\playground\python\blackjack\main" />
+      <recent name="C:\Users\Sabina\WORK\github\playground\python\hackerrank" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sabina\WORK\github\playground\python\blackjack\main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,8 +290,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="age_year" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.cow_bull">
+    <configuration name="address_book_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +303,91 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/age_year.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/address_book_practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cow_bull" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/cow_bull.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="order" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/restaurant" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/restaurant/order.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phonebook" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/phonebook.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rps_prac_python" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/rps_prac_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +398,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.age_year" />
+        <item itemvalue="Python.cow_bull" />
+        <item itemvalue="Python.rps_prac_python" />
+        <item itemvalue="Python.phonebook" />
+        <item itemvalue="Python.order" />
+        <item itemvalue="Python.address_book_practice" />
       </list>
     </recent_temporary>
   </component>
@@ -98,40 +412,858 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6ec810ef-824c-46f1-a5d0-e34398aa2cad" name="Default Changelist" comment="" />
+      <changelist id="28237e85-01cc-44f6-80cd-26a446adbd5f" name="MyWork" comment="" />
       <created>1549737558455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549737558455</updated>
     </task>
+    <task id="LOCAL-00067" summary="zhi practice 15 -21.">
+      <created>1557396512293</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1557396512308</updated>
+    </task>
+    <task id="LOCAL-00068" summary="movie-DB .Javascript">
+      <created>1557415002034</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1557415002034</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Zhi probs - 31 -37">
+      <created>1557433324516</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1557433324516</updated>
+    </task>
+    <task id="LOCAL-00070" summary="code_institute code and zhi probs">
+      <created>1557507316431</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1557507316431</updated>
+    </task>
+    <task id="LOCAL-00071" summary="zhi and dom manipulations">
+      <created>1557695309398</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1557695309398</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Important selector methods- DOM manipulation-Javascript">
+      <created>1557747654016</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1557747654016</updated>
+    </task>
+    <task id="LOCAL-00073" summary="DOM manipulation-Javascript- manipulating STYLE, TEXT AND CONTENT, ATTRIBUTE">
+      <created>1557831666852</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1557831666852</updated>
+    </task>
+    <task id="LOCAL-00074" summary="zhi probs- 54 - 58">
+      <created>1557867900997</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1557867900997</updated>
+    </task>
+    <task id="LOCAL-00075" summary="color game, score_keeper part 1- javascript">
+      <created>1558004809739</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1558004809739</updated>
+    </task>
+    <task id="LOCAL-00076" summary="ZHIWEHU PROBS. 61 TO 71">
+      <created>1558072554841</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1558072554841</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Score keeper project-Javascript">
+      <created>1558087266375</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1558087266375</updated>
+    </task>
+    <task id="LOCAL-00078" summary="color game project- javascript. generators - python">
+      <created>1558426606180</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1558426606180</updated>
+    </task>
+    <task id="LOCAL-00079" summary="color game project- part 5 and 6 -javascript">
+      <created>1558457799045</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1558457799045</updated>
+    </task>
+    <task id="LOCAL-00080" summary="color game project- part 7 to 9 -javascript">
+      <created>1558693439636</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1558693439636</updated>
+    </task>
+    <task id="LOCAL-00081" summary="DOM manipulation practice">
+      <created>1558693481721</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1558693481721</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Hotel management-oop- python">
+      <created>1558884310661</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1558884310661</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Hotel management-oop- python - Refractor into Order">
+      <created>1558884795271</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1558884795271</updated>
+    </task>
+    <task id="LOCAL-00084" summary="1.Hotel management-oop- python - Refractor into Order&#10;2.Zhiwehu python- more questions">
+      <created>1558973116965</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973116965</updated>
+    </task>
+    <task id="LOCAL-00085" summary="score_keeper project and rgb game project">
+      <created>1559248581278</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1559248581279</updated>
+    </task>
+    <task id="LOCAL-00086" summary="address_book -python">
+      <created>1559252373538</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1559252373538</updated>
+    </task>
+    <task id="LOCAL-00087" summary="1. jQuery- selecting and manipulating&#10;2. addrress book project- python">
+      <created>1559311927717</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1559311927717</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Phonebook oop">
+      <created>1559322183504</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1559322183504</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Address book oop practice">
+      <created>1559373633051</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1559373633051</updated>
+    </task>
+    <task id="LOCAL-00090" summary="jQuery methods demo">
+      <created>1559627803717</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1559627803717</updated>
+    </task>
+    <task id="LOCAL-00091" summary="jQuery Events- 'click' and 'keypress'">
+      <created>1559674904696</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1559674904698</updated>
+    </task>
+    <task id="LOCAL-00092" summary="1. jQuery events- on()&#10;2. EFFECTS AND ANIMATIONS">
+      <created>1559734783858</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1559734783858</updated>
+    </task>
+    <task id="LOCAL-00093" summary="PRACTICE PYTHON">
+      <created>1559768824558</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1559768824559</updated>
+    </task>
+    <task id="LOCAL-00094" summary="PRACTICE PYTHON and todo project jQuery">
+      <created>1559852698130</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1559852698131</updated>
+    </task>
+    <task id="LOCAL-00095" summary="PRACTICE PYTHON- rps and todo project jQuery">
+      <created>1559855640723</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1559855640723</updated>
+    </task>
+    <task id="LOCAL-00096" summary="PRACTICE PYTHON- rps and todo project jQuery">
+      <created>1560243404089</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1560243404089</updated>
+    </task>
+    <task id="LOCAL-00097" summary="paperjs- circle">
+      <created>1560439069935</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1560439069936</updated>
+    </task>
+    <task id="LOCAL-00098" summary="git tutorial">
+      <created>1560439447336</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1560439447336</updated>
+    </task>
+    <task id="LOCAL-00099" summary="circles patatap clone">
+      <created>1560761245070</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1560761245070</updated>
+    </task>
+    <task id="LOCAL-00100" summary="git tutorial">
+      <created>1560886827000</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1560886827001</updated>
+    </task>
+    <task id="LOCAL-00101" summary="flexbox and bootstrap revision">
+      <created>1562099307764</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1562099307778</updated>
+    </task>
+    <task id="LOCAL-00102" summary="while loops-javascript">
+      <created>1562258123826</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1562258123827</updated>
+    </task>
+    <task id="LOCAL-00103" summary="fuctions - javascript">
+      <created>1562318456263</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1562318456263</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Python Practice. cows and bulls exercise and tic tac toe board.">
+      <created>1562877126927</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1562877126927</updated>
+    </task>
+    <task id="LOCAL-00105" summary="javascript- forEach&#10;python - cow bull game">
+      <created>1562878410941</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1562878410941</updated>
+    </task>
+    <task id="LOCAL-00106" summary="javascript - DOM.">
+      <created>1563296877741</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1563296877741</updated>
+    </task>
+    <task id="LOCAL-00107" summary="javascript - Advanced DOM manipulation. Score Keeper project.">
+      <created>1563395667389</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1563395667389</updated>
+    </task>
+    <task id="LOCAL-00108" summary="color changer project. Advanced DOM manipulation.">
+      <created>1563528259965</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1563528259968</updated>
+    </task>
+    <task id="LOCAL-00109" summary="color changer project. Advanced DOM manipulation.">
+      <created>1564068426255</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1564068426256</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Cow bull game.">
+      <created>1566251307396</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1566251307397</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Cow bull game.More updates.">
+      <created>1566336711957</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1566336711957</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Cow bull game.More updates.">
+      <created>1566425450503</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1566425450503</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Cow bull game.More updates.">
+      <created>1566833124513</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1566833124513</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Cow bull game.More updates.">
+      <created>1566836569184</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1566836569185</updated>
+    </task>
+    <task id="LOCAL-00115" summary="truesilver dummy site - 1st cut">
+      <created>1567548295536</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1567548295547</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_has_correct_starting_balance - 2019.04.06 at 16h 00m 00s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_has_correct_starting_balance" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_has_correct_starting_balance - 2019.04.06 at 16h 00m 35s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_has_correct_starting_balance" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_has_correct_starting_balance - 2019.04.06 at 16h 01m 49s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_has_correct_starting_balance" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_has_correct_starting_balance - 2019.04.06 at 16h 06m 53s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_has_correct_starting_balance" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_has_correct_starting_balance - 2019.04.06 at 16h 08m 21s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_has_correct_starting_balance" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_starting_value - 2019.04.06 at 16h 08m 30s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_starting_value" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_starting_value - 2019.04.06 at 16h 09m 15s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_starting_value" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_user_starting_value - 2019.04.06 at 16h 09m 39s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_user_starting_value" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_main - 2019.04.06 at 16h 10m 50s.xml">
+      <configuration name="Unittests in main" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_player_TestPlayer_test_tribool - 2019.04.08 at 10h 43m 50s.xml">
+      <configuration name="Unittests for test_player.TestPlayer.test_tribool" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2240" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494577" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.10115912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.17782739" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.21668473" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.1685761" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.6056338" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.30170575" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" weight="0.17782739" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008183" side_tool="true" weight="0.17782739" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.1685761" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.2569558" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Run" order="3" weight="0.4107413" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="score_keeper project and rgb game project" />
+    <MESSAGE value="address_book -python" />
+    <MESSAGE value="1. jQuery- selecting and manipulating&#10;2. addrress book project- python" />
+    <MESSAGE value="Phonebook oop" />
+    <MESSAGE value="Address book oop practice" />
+    <MESSAGE value="jQuery methods demo" />
+    <MESSAGE value="jQuery Events- 'click' and 'keypress'" />
+    <MESSAGE value="1. jQuery events- on()&#10;2. EFFECTS AND ANIMATIONS" />
+    <MESSAGE value="PRACTICE PYTHON" />
+    <MESSAGE value="PRACTICE PYTHON and todo project jQuery" />
+    <MESSAGE value="PRACTICE PYTHON- rps and todo project jQuery" />
+    <MESSAGE value="paperjs- circle" />
+    <MESSAGE value="circles patatap clone" />
+    <MESSAGE value="git tutorial" />
+    <MESSAGE value="flexbox and bootstrap revision" />
+    <MESSAGE value="while loops-javascript" />
+    <MESSAGE value="fuctions - javascript" />
+    <MESSAGE value="Python Practice. cows and bulls exercise and tic tac toe board." />
+    <MESSAGE value="javascript- forEach&#10;python - cow bull game" />
+    <MESSAGE value="javascript - DOM." />
+    <MESSAGE value="javascript - Advanced DOM manipulation. Score Keeper project." />
+    <MESSAGE value="color changer project. Advanced DOM manipulation." />
+    <MESSAGE value="Cow bull game." />
+    <MESSAGE value="Cow bull game.More updates." />
+    <MESSAGE value="truesilver dummy site - 1st cut" />
+    <option name="LAST_COMMIT_MESSAGE" value="truesilver dummy site - 1st cut" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/age_year2.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/op_v2_prac_2.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/tic_tac_toe_udemy.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/unittesting/tic_prac_again.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/age_year.py">
+    <entry file="file://$PROJECT_DIR$/python/age_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/age_prac_again.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/operation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/guess_no.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/operator_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/rps_again.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/operation_version2_again.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/time_conversion_test.py" />
+    <entry file="file://$PROJECT_DIR$/python/unittesting/example1_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/dictionary_fruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/dictionary_examples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/hackerrank/apple_orange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/hackerrank/test_countApplesAndOranges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/school_system/teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/teacher_student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/hackerrank/test_timeConversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/hackerrank/time_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/test_card.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/youtube_oop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/test_deck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/test_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/test_dealer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/test_player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/generator_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/iterator_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/iterator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/new_deck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/deck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/card.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupyter-notebooks/BLACKJACK.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/base_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/dealer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/blackjack/main/processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/address_book_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git_tutorial/hello.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/zhi_python_excercise/clas_prob_zhi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/zhi_python_excercise/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/MyMainPackage/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/queue_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/restaurant/order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/phonebook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/address_book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/rps_prac_python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/rock_paper_scissor.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/op_v2_practice.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/cow_bull.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>

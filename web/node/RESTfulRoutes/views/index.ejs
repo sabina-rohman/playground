@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+
+<% blogs.forEach(function(blog){ %>
+  <div>
+      <h4><%= blog.title %></h4>
+      <img src="<%= blog.image %>" >
+      <div><%= blog.created.toDateString() %></div>
+      <p><%= blog.body %></p>
+  </div>
+<% }) %>

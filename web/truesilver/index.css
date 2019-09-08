@@ -1,19 +1,24 @@
 * {
-	-webkit-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
- 	box-sizing: border-box;
+ 	  box-sizing: border-box;
 }
 
 html, body {
 	padding-left: 2vw; 
 	padding-right: 2vw;
 	padding-bottom: 1vw;
+  font-family: Nunito;
+}
+
+a {
+  margin-right: 2vw;
+  font-size: 1vw;
 }
 
 [class*="col-"] {
   float: left;
-  padding: .1vw;
-  border: 1px solid red;
+  padding: 0.25%;
 }
 
 .col-1 {width: 8.33%;}
@@ -29,12 +34,15 @@ html, body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.col-logo {width: 33.33%;}
+.col-service {width: 25%;}
+
 .center {
 	text-align: center;
 }
 
 .info {
-	color: red;
+	color: gray;
 	text-align: right;
 }
 
@@ -53,7 +61,7 @@ html, body {
 
 .container {
   position: relative;
-   
+  background-image: url("./assets/background.png");
 }
 
 .overlay {
@@ -62,14 +70,88 @@ html, body {
   width:99%;
   text-align: center; 
   color: white;
-  background-color: black;
-  position: block;
-  font-size: 1.5vw;
-  opacity: .75;
+  background-image: url("./assets/transparent-black-overlay.png");
+  font-size: 2vw;
 }
 
-.phone {
+.sm-hide {
+  display: inline-block;
+}
+
+.address {
+  font-size:0.8vw;
+}
+
+#logo {
+  width: 336px;
+  height: 80px; 
+  /*border: 1px solid blue;*/
+}
+
+#phone-icon {
   height: 2vw;
-  width: 3.5vw;
-  padding-right: 1vw;
+  width: 3vw;
+  padding-right: .5vw;
+  filter: brightness(0.5);
+}
+
+#phone-number{
+  font-size:2vw;
+}
+
+#opening-time {
+  font-size: 1.3vw;
+}
+
+#sm-menu {
+  display: none;
+  padding-bottom: 2vw;
+}
+
+#menu-icon {
+  display: inline-block;
+  width: 4vw;
+  height: 4vw;
+  vertical-align: middle;  
+}
+
+#menu-text {
+  display: inline;
+  font-size:3vw;
+  color: gray;
+  margin-left: 1vw;
+}
+
+
+/* For Phones */
+@media only screen and (max-width: 700px) {
+
+  .sm-hide {
+    display: none;
+  }
+
+  .cover {
+    height: 45vw;
+  }
+
+  .col-logo {
+    width:100%;
+  }
+
+  .col-service {
+    width:50%;
+  }
+  
+  .overlay {
+    font-size: 4vw;
+  }
+
+  #sm-menu {
+    display: block;
+  }
+
+  #third {
+    float: right;
+  }
+
 }
