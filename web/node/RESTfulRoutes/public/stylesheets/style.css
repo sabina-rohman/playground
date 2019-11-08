@@ -1,8 +1,15 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#hello{
+  margin-top: 7.0em;
 }
 
-a {
-  color: #00B7FF;
+#delete{
+  display:inline;
+}
+
+i.icon{
+	font-size: 2em;
+}
+
+#btn{
+  margin-top: 2em;
 }
