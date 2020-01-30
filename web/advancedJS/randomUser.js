@@ -1,3 +1,4 @@
+// Random Users Project- error handling
 var url = "https://randomuser.me/api/";
 
 var btn = document.querySelector("#btn");
