@@ -27,11 +27,15 @@
 		});
 		it("doing type checking", function(){
 			expect([]).toEqual(jasmine.any(Array))
-		})
+		});
 		it("again type checking", function(){
 			expect(function(){}).toEqual(jasmine.any(Function))
-		})
-	})
+		});
+		it("allows for checking contents of an object", function(){
+			expect([1,2,3]).toContain(1);
+			expect({name:"Sabina", age:31}).toEqual(jasmine.objectContaining({name:'Sabina'}));
+		});
+	});
 </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Better tests with hooks</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+	describe("counting", function(){
+		var count = 0;
+		beforeEach(function(){
+			count++
+		});
+
+		afterEach(function(){
+			count = 0;
+		})
+		it("has a counter that increments", function(){
+			expect(count).toBe(1)
+		});
+		it("gets reset", function(){
+			expect(count).toBe(1)
+		});
+	});
+</script>
+</body>
+</html>
