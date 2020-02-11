@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Describe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+	describe("Array", function(){
+		var arr;
+		beforeEach(function(){
+			arr = [1,2,3];
+		})
+
+		describe("#unshift", function(){
+			it("adds an element to the begining of the array", function(){
+				arr.unshift(17);
+				expect(arr[0]).toBe(17)
+			})
+			// beforeEach runs before each callback of "it" function
+			it("returns length of the array", function(){
+				expect(arr.unshift(1000)).toBe(4)
+			})
+		})
+	})
+</script>
+</body>
+</html>

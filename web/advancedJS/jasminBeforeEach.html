@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeforeAll</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+	var arr;
+	beforeAll(function(){
+		arr = [1, 2, 3];
+	});
+	describe("Array", function(){
+		it("increase in length", function(){
+			arr.push(7);
+			expect(arr.length).toBe(4)
+		});
+		it("keep", function(){
+			arr.push(18);
+			console.log(arr);
+			expect(arr[arr.length - 1]).toBe(18)
+		});
+	});
+</script>
+</body>
+</html>

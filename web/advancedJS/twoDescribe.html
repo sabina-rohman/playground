@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Describe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+	var arr = []
+	beforeAll(function(){
+		arr = [1,2,3]
+	})
+	describe("Aydin", function(){
+		it("is lovely", function(){
+			arr.push(8)
+			expect(arr[arr.length-1]).toBe(8)
+		})
+	})
+
+	describe("Hi", function(){
+		it("Baby Mazumdar", function(){
+			arr.unshift(12)
+			expect(arr[0]).toBe(12)
+		})
+	})
+</script>
+</body>
+</html>
