@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28237e85-01cc-44f6-80cd-26a446adbd5f" name="MyWork" comment="truesilver dummy site - 1st cut">
-      <change beforePath="$PROJECT_DIR$/web/truesilver/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/truesilver/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/truesilver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/truesilver/index.html" afterDir="false" />
-    </list>
-    <list id="6ec810ef-824c-46f1-a5d0-e34398aa2cad" name="dont commit" comment="dont commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playground.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="6ec810ef-824c-46f1-a5d0-e34398aa2cad" name="dont commit" comment="dont commit" />
     <ignored path="venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/cow_bull.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="217">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -118,7 +113,11 @@
       <find>lost_the_game</find>
       <find>except ex</find>
       <find>todo</find>
+      <find>outreachy</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -264,7 +263,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chingu-prework-tier1" />
+    <property name="last_opened_file_path" value="C:/" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
@@ -806,8 +805,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-478" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.10115912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1262,8 +1260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/cow_bull.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="217">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
