@@ -6,6 +6,10 @@
 </head>
 <body>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
@@ -58,6 +62,21 @@
 			expect(sample).toHaveBeenCalled();
 		});
 	});
+
+	// Asynchronous code
+	function getUserInfo(username){
+		return $.getJSON("https://api.github.com/users/" + username);
+	}
+
+	describe("#getUserInfo", function(){
+		it("returns the correct usernameeee for the user", function(done){
+			getUserInfo('elie').then(function(data){
+				expect(data.name).toBe('Elie Schoppik');
+				done();
+			})
+		})
+	})
+
 </script>
 </body>
 </html>

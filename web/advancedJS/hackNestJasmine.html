@@ -26,53 +26,56 @@ function libraryDates(input) {
     var actualYear = Number(newA[2]);
     var expectedYear = Number(newB[2]);
   
-    var fine = 0;
+    var fine = null;
     
     if(actualYear < expectedYear){
-        fine = 0;
-        console.log(fine);
-        return fine
-     }
-
-     if(actualMonth < expectedMonth){
-        fine = 0;
-        console.log(fine);
-        return fine
-     }
-    if(actualYear === expectedYear){
-        if(actualMonth <= expectedMonth) {
-            if(actualDay <= expectedDay) {
-                fine = 0;
-            } else if(actualDay > expectedDay){
-                var diffDays = actualDay - expectedDay
+    	fine = 0;
+    } else if(actualYear === expectedYear) {
+    	if(actualMonth < expectedMonth){
+    		fine = 0;
+    	}else if(actualMonth === expectedMonth) {
+    		if(actualDay <= expectedDay) {
+    			fine = 0;
+    		} else {
+    			// actualDay > expectedDay
+    			var diffDays = actualDay - expectedDay
                 fine = 15 * diffDays;
-            }
-        } else {
-            var diffMonth = actualMonth - expectedMonth
+    		}
+    	} else {
+    		// its actualMonth is more than expectedMonth(implicit)
+    		var diffMonth = actualMonth - expectedMonth
             fine = 500 * diffMonth
-            }
+    	}
     } else {
-        fine = 10000;
+    	// its actualYear is more than expectedYear(explicit)
+    	fine = 10000;
     }
+    
     console.log(fine);
     return fine;
 }
 
-describe("Library dates", function(){
-	it("are correct", function(){
-		expect(libraryDates("9 6 2015\n6 6 2015")).toBe(45)
+describe("Library dates", function(){	
+	it("return before due date - year early", function(){
+		expect(libraryDates("21 6 2013\n6 2 2015")).toBe(0)
 	})
-})
-
-describe("Library dates", function(){
-	it("are correct", function(){
-		expect(libraryDates("2 2 2015\n6 6 2015")).toBe(0)
+	it("return before due date - month early", function(){
+		expect(libraryDates("21 1 2015\n6 2 2015")).toBe(0)
 	})
-})
-
-describe("Library dates", function(){
-	it("are correct", function(){
-		expect(libraryDates("2 7 2015\n6 6 2015")).toBe(500)
+	it("return before due date - day early", function(){
+		expect(libraryDates("5 2 2015\n6 2 2015")).toBe(0)
+	})
+	it("return same day", function(){
+		expect(libraryDates("6 2 2015\n6 2 2015")).toBe(0)
+	})
+	it("return after due date - day later", function(){
+		expect(libraryDates("8 2 2015\n6 2 2015")).toBe(30)
+	})
+	it("return after due date - month later", function(){
+		expect(libraryDates("3 5 2015\n6 2 2015")).toBe(1500)
+	})
+	it("return after due date - year later", function(){
+		expect(libraryDates("2 1 2017\n6 2 2015")).toBe(10000)
 	})
 })
 </script>
