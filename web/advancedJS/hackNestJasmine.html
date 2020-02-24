@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+function libraryDates(input) {
+   var list = input.split("\n"); 
+    var actual = list[0];
+    var expected = list[1];
+    var newA = actual.split(" ");
+    var newB = expected.split(" ");
+    
+    var actualDay = Number(newA[0]);
+    var expectedDay = Number(newB[0]);
+    
+    var actualMonth = Number(newA[1]);
+    var expectedMonth = Number(newB[1]);
+  
+    var actualYear = Number(newA[2]);
+    var expectedYear = Number(newB[2]);
+  
+    var fine = 0;
+    
+    if(actualYear < expectedYear){
+        fine = 0;
+        console.log(fine);
+        return fine
+     }
+
+     if(actualMonth < expectedMonth){
+        fine = 0;
+        console.log(fine);
+        return fine
+     }
+    if(actualYear === expectedYear){
+        if(actualMonth <= expectedMonth) {
+            if(actualDay <= expectedDay) {
+                fine = 0;
+            } else if(actualDay > expectedDay){
+                var diffDays = actualDay - expectedDay
+                fine = 15 * diffDays;
+            }
+        } else {
+            var diffMonth = actualMonth - expectedMonth
+            fine = 500 * diffMonth
+            }
+    } else {
+        fine = 10000;
+    }
+    console.log(fine);
+    return fine;
+}
+
+describe("Library dates", function(){
+	it("are correct", function(){
+		expect(libraryDates("9 6 2015\n6 6 2015")).toBe(45)
+	})
+})
+
+describe("Library dates", function(){
+	it("are correct", function(){
+		expect(libraryDates("2 2 2015\n6 6 2015")).toBe(0)
+	})
+})
+
+describe("Library dates", function(){
+	it("are correct", function(){
+		expect(libraryDates("2 7 2015\n6 6 2015")).toBe(500)
+	})
+})
+</script>
+</body>
+</html>
