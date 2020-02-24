@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock setInterval</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+<script>
+	describe("a simple setInterval", function(){
+		var dummyFunction;
+		beforeEach(function(){
+			dummyFunction = jasmine.createSpy("dummyFunction");
+			jasmine.clock().install();
+		})
+
+		afterEach(function(){
+			jasmine.clock().uninstall();
+		})
+
+		it("checks to see number of times the function is been invoked", function(){
+			setInterval(function(){
+				dummyFunction();
+			}, 1000)
+			jasmine.clock().tick(999);
+			expect(dummyFunction.calls.count()).toBe(0);
+			jasmine.clock().tick(1000);
+			expect(dummyFunction.calls.count()).toBe(1);
+			jasmine.clock().tick(1);
+			expect(dummyFunction.calls.count()).toBe(2);
+		});
+	});
+</script>
+</body>
+</html>
