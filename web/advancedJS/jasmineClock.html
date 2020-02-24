@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
 <script>
+	// <!-- setInterval 
 	describe("a simple setInterval", function(){
 		var dummyFunction;
 		beforeEach(function(){
@@ -31,6 +32,30 @@
 			expect(dummyFunction.calls.count()).toBe(1);
 			jasmine.clock().tick(1);
 			expect(dummyFunction.calls.count()).toBe(2);
+		});
+	});
+
+
+	// setTimeout
+
+	describe("a simple setTimeout", function(){
+		var sample;
+		beforeEach(function(){
+			sample = jasmine.createSpy("sampleFunction");
+			jasmine.clock().install();
+		})
+		afterEach(function(){
+			jasmine.clock().uninstall();
+		})
+
+		it("is only invoked after 1000ms", function(){
+			setTimeout(function(){
+				sample();
+			}, 1000)
+			jasmine.clock().tick(999);
+			expect(sample).not.toHaveBeenCalled();
+			jasmine.clock().tick(1);
+			expect(sample).toHaveBeenCalled();
 		});
 	});
 </script>
