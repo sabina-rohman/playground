@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jasmine Spy</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+
+<script>
+	function add(a,b,c){
+		return a+b+c;
+	}
+
+	describe("Add", function(){
+		var addSpy, result;
+		beforeEach(function(){
+			addSpy = spyOn(window, 'add');
+			result = addSpy();
+		})
+
+		it("can have params tested", function(){
+			expect(addSpy).toHaveBeenCalled();
+		});
+	});
+</script>
+</body>
+</html>
