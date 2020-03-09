@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jasmine Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+  <script>
+
+  	const numbers = ['1', '2', '3'];
+    const ordinals = ['first', 'second', 'third'];
+    const cardinals = ['one', 'two', 'three'];
+
+    function findMatchingIndex(userInput){
+    //Return the index of the userInput from the first array that contains it
+    var userInput = userInput.toLowerCase();
+    var numberIndex  = numbers.indexOf(userInput);
+    var ordinalIndex = ordinals.indexOf(userInput);
+    var cardinalIndex = cardinals.indexOf(userInput);
+    if(numberIndex !== -1){
+      return numberIndex;
+    } else if (ordinalIndex !== -1) {
+      return ordinalIndex;
+    } else if (cardinalIndex !== -1) {
+      return cardinalIndex;
+    } else {
+      return -1;
+    }
+      //return numbers.indexOf(userInput);
+      // return null;
+    }
+
+
+  	describe("Tabs", function(){
+  		it("is number 1", function(){
+  			expect(findMatchingIndex('1')).toBe(0)
+  		});
+  		it("is number 3", function(){
+        expect(findMatchingIndex('3')).toBe(2)
+      });
+      it("is invalid number 15", function(){
+        expect(findMatchingIndex('15')).toBe(-1)
+      });
+
+      it("is ordinal 'first'", function(){
+        expect(findMatchingIndex('first')).toBe(0)
+      });
+      it("is ordinal 'third'", function(){
+        expect(findMatchingIndex('third')).toBe(2)
+      });
+      it("is uppercase ordinal 'Third'", function(){
+        expect(findMatchingIndex('Third')).toBe(2)
+      });
+      it("is invalid ordinal 'fifteenth'", function(){
+        expect(findMatchingIndex('fifteenth')).toBe(-1)
+      });
+
+      it("is cardinal 'one'", function(){
+        expect(findMatchingIndex('one')).toBe(0)
+      });
+      it("is cardinal 'three'", function(){
+        expect(findMatchingIndex('three')).toBe(2)
+      });
+      it("is uppercase cardinal 'Third'", function(){
+        expect(findMatchingIndex('Third')).toBe(2)
+      });
+      it("is invalid cardinal 'fifteen'", function(){
+        expect(findMatchingIndex('fifteen')).toBe(-1)
+      });
+  	});
+  </script>
+</body>
+</html>
