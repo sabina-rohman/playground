@@ -16,21 +16,19 @@
 
     function findMatchingIndex(userInput){
     //Return the index of the userInput from the first array that contains it
-    var userInput = userInput.toLowerCase();
-    var numberIndex  = numbers.indexOf(userInput);
-    var ordinalIndex = ordinals.indexOf(userInput);
-    var cardinalIndex = cardinals.indexOf(userInput);
-    if(numberIndex !== -1){
-      return numberIndex;
-    } else if (ordinalIndex !== -1) {
-      return ordinalIndex;
-    } else if (cardinalIndex !== -1) {
-      return cardinalIndex;
-    } else {
-      return -1;
-    }
-      //return numbers.indexOf(userInput);
-      // return null;
+      var userInput = userInput.toLowerCase();
+      var numberIndex  = numbers.indexOf(userInput);
+      var ordinalIndex = ordinals.indexOf(userInput);
+      var cardinalIndex = cardinals.indexOf(userInput);
+      if(numberIndex !== -1){
+        return numberIndex;
+      } else if (ordinalIndex !== -1) {
+        return ordinalIndex;
+      } else if (cardinalIndex !== -1) {
+        return cardinalIndex;
+      } else {
+        return -1;
+      }
     }
 
 

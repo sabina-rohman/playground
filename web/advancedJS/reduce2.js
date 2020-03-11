@@ -33,6 +33,26 @@ function createFullName(arr){
     // extractValue(arr,'name') // ['Elie', 'Tim', 'Matt', 'Colt']
 */
 
-function extractValue(arr){
-	
+function extractValue(arr,key){
+	return arr.reduce(function(accumulator, nextValue){
+        accumulator.push(nextValue[key])
+        return accumulator
+    }, []);
+}
+
+// Write a function called vowelCount which accepts a string and returns an object with the keys as the vowel and the values as the number of times the vowel appears in the string. This function should be case insensitive so a lowercase letter and uppercase letter should count
+
+function vowelCount(str){
+    var vowels = "aeiou";
+    return str.split('').reduce(function(accumulator, nextValue){
+        var nextValue = nextValue.toLowerCase();
+        if(vowels.indexOf(nextValue) !== -1){
+            if(nextValue in accumulator){
+            accumulator[nextValue] ++;
+            } else {
+                accumulator[nextValue] = 1;
+            }
+        }
+        return accumulator;
+    }, {})
 }
