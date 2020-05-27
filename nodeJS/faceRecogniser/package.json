@@ -1,0 +1,15 @@
+{
+  "name": "facerecogniser",
+  "version": "1.0.0",
+  "description": "Face Recogniser project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sabina",
+  "license": "ISC",
+  "dependencies": {
+    "cognitive-services": "^1.2.3",
+    "express": "^4.17.1"
+  }
+}
