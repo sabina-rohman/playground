@@ -1,0 +1,1 @@
+getInputValue("#inputBox","#btn");

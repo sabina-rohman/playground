@@ -1,0 +1,18 @@
+.mystyle {
+	color: purple;
+	text-transform: uppercase;
+	border: 2px solid black;
+	padding: 40px;
+	margin: 50px auto;
+	max-width: 760px;
+	color: black;
+    /*ext-shadow: 2px 2px 4px #000000;*/
+    font-size: 50px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+input[type=checkbox] {
+	/*background-color: red;*/
+	position: relative;
+	cursor: pointer;
+}
