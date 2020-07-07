@@ -62,6 +62,7 @@ function rightTotal(arr){
         // commonMethods(start, end, arr);
         counter++
     }
+    // var totalSumRight = commonMethods(start, end, arr)
     return `Right branch: ${totalSumRight}`;
 }
 
@@ -88,23 +89,33 @@ function sumWithoutMinus(arr){
     return withMinus;
 }
 
-// function commonMethods(start, end, arr){
+// function commonMethods(arr, start, end){
+//     var arrLen = arr.length;
+//     // var counter = 0;
 //     var totalSumRight = 0;
-//     if(end > arrLen){
-//         end = arrLen - 1;
-//     }
-    
-//     if(start > arrLen){
-//         break;
-//     }
-    
-//     var subArray = getSubArray(arr, start, end);
-//     if(containsMinus(subArray)){
-//         totalSumRight += sumWithoutMinus(subArray);
-//         // console.log(totalSumRight);
-//         break
-//     } else {
-//         totalSumRight += getSumOfArray(subArray);
+//     while(true) {
+//         // var start = 3 * (2**counter) - 1;
+//         // var end = start + (2**counter) - 1;
+//         // if array's length is less than end point, take the last element's index
+//         if(end > arrLen){
+//             end = arrLen - 1;
+//         }
+
+//         if(start > arrLen){
+//             break;
+//         }
+
+//         var subArray = getSubArray(arr, start, end);
+//         if(containsMinus(subArray)){
+//             totalSumRight += sumWithoutMinus(subArray);
+//             // console.log(totalSumRight);
+//             break
+//         } else {
+//             totalSumRight += getSumOfArray(subArray);
+//         }
+
+//         // commonMethods(start, end, arr);
+//         counter++
 //     }
 //     return totalSumRight;
 // }
