@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Component 1</title>
         <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="component1.css">
+        <link rel="stylesheet" href="moxie2nd.css">
         <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
@@ -13,18 +13,26 @@
         <div id="app"></div>
         <!-- script tag starts here -->
         <script type="text/babel">
+            class HobbiesList extends React.Component {
+                render(){
+                    const listyle = {fontSize: "1.5rem"};
+                    const hobbies = ["Sleeping", "Eating", "Cuddling"];
+                    return(
+                        <div>
+                            {hobbies.map((hobby,index) => <li key={index} style={listyle}>{hobby}</li>)}
+                        </div>
+                    )
+                }
+            }
+
             class Pet extends React.Component {
                 render() {
-                    const liStyle = {fontSize: '1.5em'};
                     return (
-                        <div className="card">s
+                        <div className="card">
                             <h2 className="name">Moxie</h2>
-                            <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80"/>    
+                            <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50"/>    
                             <h5 style={{fontSize: '2em', margin: '2px'}}>  Hobbies:</h5>
-                            <ul>
-                                <li style={liStyle}>Eat</li>
-                                <li style={liStyle}>Sleep</li>    
-                            </ul>
+                            <HobbiesList />
                         </div>
                     )
                 }
