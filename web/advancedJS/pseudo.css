@@ -1,0 +1,16 @@
+h1:hover {
+    color: yellow
+}
+
+button:hover {
+    font-size: 40px;
+}
+
+input:focus {
+    color: red;
+}
+
+button:focus {
+    border-radius: 10px;
+    background-color: teal;
+}
