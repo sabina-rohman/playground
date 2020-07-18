@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Pet from './Pet';
+import RecipeApp from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Pet />
+    <RecipeApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
