@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './RecipeList.css';
 
 function RecipeList (props){
+    // props.recipes refer to the defaulProps defined after the component RecipeList
     const recipes = props.recipes.map((r, index) => (
         <Recipe key={index} {...r} />
     ))

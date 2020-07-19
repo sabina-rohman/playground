@@ -1,5 +1,6 @@
 import React from 'react';
 import './Recipe.css';
+import PropTypes from 'prop-types';
 
 function Recipe(props) {
     const {title, img, instructions} = props;
