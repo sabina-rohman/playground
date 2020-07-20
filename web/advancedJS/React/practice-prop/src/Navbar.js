@@ -5,7 +5,7 @@ function Navbar(){
     return(
         <div>
             <header>
-                <h2><a>PetProject</a></h2>
+                <h2><a>Petzy</a></h2>
                 <nav>
                     <li><a>Home</a></li>
                     <li><a>About</a></li>

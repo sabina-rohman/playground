@@ -1,6 +1,6 @@
 .pet-card {
     max-width: 31%;
-    min-width: 240px;
+    min-width: 350px;
     margin: 1%;
     border: 2px solid blue;
     border-radius: 0 0 2px 2px;
@@ -27,6 +27,3 @@
     margin-top: 0;
 }
 
-.list {
-    list-style: none;
-}
