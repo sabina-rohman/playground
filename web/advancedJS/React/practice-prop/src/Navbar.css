@@ -1,0 +1,38 @@
+header a:hover {
+    opacity: 1;
+    color: white
+}
+header nav {
+    display: flex;
+  }
+
+header nav li {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+  }
+  
+  header nav li:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1000px) {
+    header{
+      padding: 20px 50px;
+    }
+  }
+  
+  
+  @media (max-width: 700px) {
+    header{
+      flex-direction: column;
+    }
+  
+    header h2{
+      margin-bottom: 15px;
+    }
+  }
