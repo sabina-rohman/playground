@@ -38,7 +38,7 @@ PetList.defaultProps = {
     ]
 }
 
-PetList.propTypee ={
+PetList.propType ={
     pets : PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
