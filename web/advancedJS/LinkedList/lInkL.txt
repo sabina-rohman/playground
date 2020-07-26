@@ -1,0 +1,18 @@
+// Linked list is a common data structures that contains node
+// Node itself contains two key peices of infromations--> the element itself and reference to the next node.
+
+    ARRAYS                 |              LINKED LIST
+ =======================================================================================
+1...Fixed size             |   Dynamic size
+--------------------------------------------------------------------
+2...Inefficient Insertions |   Efficient Insertions and Deletions
+    and Deletions          |
+---------------------------------------------------------------------
+3...Random access i.e.,    |   No random access
+    efficient indexing     |
+---------------------------------------------------------------------
+4...May result in much     |  No waste of memory
+    memory waste           |
+---------------------------------------------------------------------
+5...Sequential access is   |  Sequential access is slow
+    faster                 |
