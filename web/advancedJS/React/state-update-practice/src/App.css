@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: bisque;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
