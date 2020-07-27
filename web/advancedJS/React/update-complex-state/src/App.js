@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 
+// pass state down to the child component as prop
 const InstructorItem = props => {
     return (
       <li>
