@@ -1,38 +1,43 @@
+// YOU CAN CHANGE ONE NODE TO ANOTHER NODE.
+
 class LinkedList {
     constructor(){
-        this.length = 0;
         this.head = null;
+        this.length = 0;
     }
-    
-    size() {
+
+    size(){
         return this.length;
     }
 
-    head() {
+    isEmpty(){
+        return this.length === 0;
+    }
+
+    head(){
         return this.head;
     }
 
-    add(element) {
+    add(element){
         const node = new Node(element);
         if(this.head === null){
             this.head = node;
         } else {
             let currentNode = this.head;
             while(currentNode.next){
-                currentNode = currentNode.next;
+                currentNode = currentNode.next
             }
-
             currentNode.next = node;
         }
-
         this.length++
     }
 
-    remove(element) {
+    remove(element){
         let currentNode = this.head;
-        var previousNode;
+        let previousNode;
         if(currentNode.element === element){
-            this.head = currentNode.next
+            // we can change this.head (assign another node to ba head)
+            this.head = currentNode.next;
         } else {
             while(currentNode.element !== element){
                 previousNode = currentNode;
@@ -43,12 +48,7 @@ class LinkedList {
         this.length--;
     }
 
-    isEmpty() {
-        return this.length === 0;
-    }
-
-    // Find index of the element
-    indexOf(element) {
+    indexOf(element){
         let currentNode = this.head;
         let index = -1;
         while(currentNode){
@@ -58,25 +58,22 @@ class LinkedList {
             }
             currentNode = currentNode.next;
         }
-        // if element isn't in the linkedList;
         return -1;
     }
 
-    // Find element of the index
-    elementOf(index) {
-        let currentNode = head;
+    elementOf(index){
+        let currentNode = this.head;
         let count = 0;
         while(count < index){
             count++;
-            currentNode = currentNode.next;
+            currentNode = currentNode.index;
         }
         return currentNode.element;
     }
 }
 
-
 class Node {
-    constructor(element) {
+    constructor(element){
         this.element = element;
         this.next = null;
     }
