@@ -64,7 +64,7 @@ class LinkedList {
 
     // Find element of the index
     elementOf(index) {
-        let currentNode = head;
+        let currentNode = this.head;
         let count = 0;
         while(count < index){
             count++;
