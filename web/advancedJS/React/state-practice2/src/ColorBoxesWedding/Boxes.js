@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Box from './Box'
 
-const NUM_BOXES = 32
+const NUM_BOXES = 32;
 const ALL_COLORS = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond",
                     "Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate",
                     "Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod",
@@ -23,44 +23,36 @@ const ALL_COLORS = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beig
                     "SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke",
                     "Yellow","YellowGreen"]
 
-class ColorBoxes extends Component {
-    constructor(props) {
+class Boxes extends Component {
+    constructor(props){
         super(props)
-        this.state = {colors: this.generateRandomColors()}
+        this.state= {backgroundColor: this.generateRandomNumbers()}
 
         setInterval(() => {
-            this.setState({colors: this.generateRandomColors()})
-        },1000);
-
+            this.setState({backgroundColor: this.generateRandomNumbers()});
+        }, 1000)
     }
 
-    // this methos returns an array of 32 random colors
-    // eg:- ['yellow', 'red',...]
-    generateRandomColors(){
+    generateRandomNumbers(){
         return Array(NUM_BOXES)
-                        .fill()
-                        .map(x => Math.floor(Math.random() * ALL_COLORS.length))
-                        .map(x => ALL_COLORS[x])
+            .fill()
+            .map(x => Math.floor(Math.random() * ALL_COLORS.length))
+            .map(x => ALL_COLORS[x])
     };
 
     render(){
-        const boxes = this.state.colors.map((color, index) => (
+        const boxes = this.state.backgroundColor.map((color, index) => (
             <Box 
                 key={index}
                 color={color}
             />
-        ));
-
+        ))
         return(
-        <div>
-            <ul>
+            <div>
                 {boxes}
-            </ul>
-        </div>
+            </div>
         )
     }
 }
 
-
-  
-export default ColorBoxes;
+export default Boxes;

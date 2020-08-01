@@ -3,7 +3,13 @@ import './Box.css';
 
 const Box = props => {
     return(
-        <div style={{backgroundColor: props.color}} className='box-common' >{props.color}</div>
+        <div style={{
+                      // background: "linear-gradient(#e66465, #9198e5);" 
+                      backgroundImage: 'linear-gradient(to bottom, ' + props.color + ', #FFFF99)'
+                    }} 
+              className='box-common' >
+            {props.color}
+        </div>
         )
   }
 

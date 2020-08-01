@@ -1,0 +1,14 @@
+.box-element {
+    width: 150px;
+    height:150px;
+    display:inline-block;
+    position: relative;
+    border-radius: 50%;
+}
+
+.box-element p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}

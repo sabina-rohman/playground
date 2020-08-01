@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ColorBoxes from './ColorBoxesProj/ColorBoxes';
+import Boxes from './ColorBoxesWedding/Boxes';
 
 class App extends Component {
   constructor(props){
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ColorBoxes />
+        <Boxes />
       </div>
     )
   }
