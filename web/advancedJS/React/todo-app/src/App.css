@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Raleway:ital,wght@1,100;1,300&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Chilanka', cursive;
+}
+
+.App ol li {
+  font-size: 1.2 em;
+  margin: 10px;
+}
+
+.todo-input {
+  min-width: 250px;
+  min-height: 30px;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.save-button {
+  font-size: 1.2em;
+}
+
+.save-button:hover {
+  border: 2px solid peachpuff;
+}
+
+.todo-content {
+  /* background-color: peachpuff;
+  height: 300px;
+  width: 300px; */
+  font-family: 'Raleway', sans-serif, cursive;
+  font-weight: 800;
+  font-size: 1.2em;
+}

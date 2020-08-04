@@ -1,0 +1,42 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1584974292709-5c2f0619971b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family:Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin-top: 50px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 300px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#ghanti {
+  width: 100px;
+  height:100px;
+  font-size: 50px;
+  /* color: blue; */
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #ghanti {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

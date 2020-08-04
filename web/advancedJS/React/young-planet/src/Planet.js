@@ -17,8 +17,8 @@ Planet.defaultProps = {
     planetAge: (earthYears, ageInYears) => Number((ageInYears/earthYears).toFixed(2))
 }
 
-Planet.propTypes = {
-    secondsInEarthYear : PropTypes.number
-}
+// Planet.propTypes = {
+//     secondsInEarthYear : PropTypes.number
+// }
 
 export default Planet;
