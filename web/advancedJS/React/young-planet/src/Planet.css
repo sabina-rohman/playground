@@ -1,0 +1,8 @@
+.planet {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: teal;
+    margin: 20px;
+}
