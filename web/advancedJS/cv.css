@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.outer {
+    background-image: url("https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80");
+    height: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+}
+
+#bulb {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+#bulb:hover {
+    font-size: 90px;
+    color: yellow;
+}
+
+p {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    color: white;
+    font-size: 3em;
+}
+
+.btn {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
