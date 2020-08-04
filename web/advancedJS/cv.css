@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -5,22 +8,20 @@ html {
 body, html {
     height: 100%;
     object-fit: cover;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .outer {
     background-image: url("https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80");
     height: 100%;
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    image-rendering: crisp-edges;
-    image-rendering: -moz-crisp-edges;          /* Firefox */
-    image-rendering: -o-crisp-edges;            /* Opera */
-    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
-    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    border-bottom-right-radius: 50px ;
+    border-bottom-left-radius: 50px;
 }
 
 #bulb {
@@ -35,6 +36,19 @@ body, html {
     font-size: 90px;
     color: yellow;
 }
+
+.hoverPic {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 
 p {
     position: absolute;
@@ -54,6 +68,11 @@ p {
     text-align: center;
 }
 
+.skills span {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -63,5 +82,25 @@ p {
 .grid-item {
     padding: 20px;
     font-size: 30px;
+    text-align: center;
+}
+
+.triangle {
+    height: 0;
+    width:0;
+    border-left: 100px solid blue;
+    /* border-right: 10px solid blue; */
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    position: relative;
+}
+
+hr.style10 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.projects {
     text-align: center;
 }

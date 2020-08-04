@@ -18,7 +18,7 @@
         <button class="btn">Know me!</button> 
     </div>
     <div class="skills">
-        <h1>Skills</h1>
+        <h1>Skills <span><i class="code icon"></i></span></h1>
         <div class="grid-container">
             <div class="grid-item">JavaScript</div>
             <div class="grid-item">NodeJS</div>
@@ -28,6 +28,25 @@
             <div class="grid-item">Git</div>
         </div>
     </div>
+    <div class="triangle"></div>
+    <br>
+    <hr class="style10">
+    
+    <div class="projects">
+        <h1>Projects</h1>
+    </div>
 
+    <script>
+        var bulb = document.querySelector("#bulb");
+        var outer = document.querySelector(".outer")
+        bulb.addEventListener('mouseenter', function(){
+            outer.classList.toggle('hoverPic');
+            outer.classList.toggle('outer');
+        });
+        bulb.addEventListener('mouseleave', function(){
+            outer.classList.toggle('hoverPic');
+            outer.classList.toggle('outer');
+        });
+    </script>
 </body>
 </html>
