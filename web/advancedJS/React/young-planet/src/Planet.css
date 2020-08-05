@@ -1,8 +1,9 @@
 .planet {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    color: white;
-    background-color: teal;
-    margin: 20px;
+    grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, minmax(150px, auto));
+	max-width: 960px;
+	margin: 0 auto;
+    grid-gap: 10px;
+    background-color: lavender;
 }
+
