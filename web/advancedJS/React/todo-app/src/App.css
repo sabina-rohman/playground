@@ -22,6 +22,7 @@
 
 .save-button {
   font-size: 1.2em;
+  display: inline-block;
 }
 
 .save-button:hover {
