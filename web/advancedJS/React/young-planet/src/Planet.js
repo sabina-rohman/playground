@@ -5,20 +5,20 @@ import PropTypes from 'prop-types'
 function Planet(props){
     return(
     <div className="planet" >
-        <p>{props.data.name}</p>
-        <p>{props.data.earthYears}</p>
-        <p>{props.age}</p>
-        <p>{props.weight}</p>
-        <p>Age in this planet:{props.planetAge(props.data.earthYears, props.age)}</p>
-        <p>Weight in this planet:{props.planetWeight(props.data.earthWeight, props.weight)}</p>
+        <img className="planet-img" src={props.data.image}/>
+        <div className="planet-content">
+            <div className="planet-name">{props.data.name}</div>
+            <p className="planet-age">{props.planetAge(props.data.earthYears, props.age)} Year(s)</p>
+            <p className="planet-weight">{props.planetWeight(props.data.earthWeight, props.weight)} Kg</p>
+        </div>
     </div>
     )
 }
 
 
 Planet.defaultProps = {
-    planetAge: (earthYears, ageInYears) => Number((ageInYears/earthYears).toFixed(2)),
-    planetWeight: (earthWeight, weightInKg) => Number((earthWeight*weightInKg).toFixed(2))
+    planetAge: (earthYears, ageInYears) => Number((ageInYears/earthYears).toFixed(0)),
+    planetWeight: (earthWeight, weightInKg) => Number((earthWeight*weightInKg).toFixed(0))
 }
 
 // Planet.propTypes = {

@@ -1,9 +1,59 @@
-.planet {
-    grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(4, minmax(150px, auto));
-	max-width: 960px;
-	margin: 0 auto;
-    grid-gap: 10px;
-    background-color: lavender;
+
+.planets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    
 }
 
+.planet {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    /* padding: .5rem; */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.planet-name {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.planet-weight {
+    font-size: 1.5em;
+    color: purple;
+}
+
+.planet-age {
+    font-size: 1.5em;
+    color: black;
+}
+
+.planet-img {
+    width: 100%;
+    display: block;
+}
+
+.age {
+    margin: 50px 50px;
+}
+
+.age:focus {
+    color: rebeccapurple;
+    font-weight: 100px;
+}
+
+.weight:focus {
+    color: rebeccapurple;
+    font-weight: 100px;
+}
+
+.planet-content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: white;
+}

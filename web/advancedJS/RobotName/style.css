@@ -1,0 +1,36 @@
+.parent {
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(to right, rgb(101, 101, 165), pink);
+    border: 3px solid black;
+    margin: 0 auto;
+    opacity: 1;
+    position: relative;
+    z-index: 3;
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.parent:hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.parent:hover {
+    transform: translateY(30px);
+    transition: 0.6s ease-in;
+}
