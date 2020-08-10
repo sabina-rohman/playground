@@ -1,20 +1,20 @@
 
 .planets {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 2rem;
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 40px auto;
     font-family: sans-serif;
     
 }
 
 .planet {
-    border: 2px solid #e7e7e7;
+    
     border-radius: 4px;
-    /* padding: .5rem; */
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    z-index: 3;
 }
 
 .planet-name {
@@ -35,6 +35,7 @@
 .planet-img {
     width: 100%;
     display: block;
+    
 }
 
 .input-age {

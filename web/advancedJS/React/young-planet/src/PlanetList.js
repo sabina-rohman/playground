@@ -10,13 +10,19 @@ class PlanetList extends Component {
     constructor(props){
         super(props);
         this.state = {age: null, weight: null, finalAge: null, finalWeight: null};
-
+        this.myDivToFocus = React.createRef();
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleSubmit(e) {
         e.preventDefault();
         this.setState({age: '', weight: '', finalAge: this.state.age, finalWeight: this.state.weight});
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({ 
+               behavior: "smooth", 
+               block: "nearest"
+            })
+        }
       }
 
     render(){
@@ -52,10 +58,13 @@ class PlanetList extends Component {
                         className="save-button"
                      >
                         Let's Find Out!
-                </button>
+                    </button>
         </form>
                 
-                <ul className="planets">
+                <ul 
+                className="planets"
+                ref={this.myDivToFocus}
+                >
                    {planetNames}
                 </ul>
             </div>

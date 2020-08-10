@@ -57,7 +57,7 @@ h1 {
     width: var(--size);
     height: var(--size);
     top: calc(50% - var(--size) /2);
-    left: calc(80% - var(--size) /2);
+    left: calc(60% - var(--size) /2);
     border-radius: 50%;
 
 }
@@ -131,26 +131,6 @@ h1 {
 
 @keyframes mercury {
     from {
-        transform: rotate(0) translateX(40px) ;
-    }
-
-    to {
-        transform: rotate(360deg) translateX(40px) ;
-    }
-}
-
-@keyframes venus {
-    from {
-        transform: rotate(0) translateX(60px) ;
-    }
-
-    to {
-        transform: rotate(360deg) translateX(60px) ;
-    }
-}
-
-@keyframes earth {
-    from {
         transform: rotate(0) translateX(80px) ;
     }
 
@@ -159,27 +139,17 @@ h1 {
     }
 }
 
-@keyframes mars {
+@keyframes venus {
     from {
-        transform: rotate(0) translateX(100px) ;
+        transform: rotate(0) translateX(120px) ;
     }
 
     to {
-        transform: rotate(360deg) translateX(100px) ;
+        transform: rotate(360deg) translateX(120px) ;
     }
 }
 
-@keyframes jupiter {
-    from {
-        transform: rotate(0) translateX(130px) ;
-    }
-
-    to {
-        transform: rotate(360deg) translateX(130px) ;
-    }
-}
-
-@keyframes saturn {
+@keyframes earth {
     from {
         transform: rotate(0) translateX(160px) ;
     }
@@ -189,23 +159,53 @@ h1 {
     }
 }
 
-@keyframes uranus {
-    from {
-        transform: rotate(0) translateX(180px) ;
-    }
-
-    to {
-        transform: rotate(360deg) translateX(180px) ;
-    }
-}
-
-@keyframes neptune {
+@keyframes mars {
     from {
         transform: rotate(0) translateX(200px) ;
     }
 
     to {
-        transform: rotate(360deg) translateX(100px) ;
+        transform: rotate(360deg) translateX(200px) ;
+    }
+}
+
+@keyframes jupiter {
+    from {
+        transform: rotate(0) translateX(260px) ;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(260px) ;
+    }
+}
+
+@keyframes saturn {
+    from {
+        transform: rotate(0) translateX(320px) ;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(320px) ;
+    }
+}
+
+@keyframes uranus {
+    from {
+        transform: rotate(0) translateX(360px) ;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(360px) ;
+    }
+}
+
+@keyframes neptune {
+    from {
+        transform: rotate(0) translateX(400px) ;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(400px) ;
     }
 }
 
