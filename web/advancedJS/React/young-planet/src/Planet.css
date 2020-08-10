@@ -40,17 +40,25 @@
 .input-age {
     margin: 100px 100px;
     position: absolute;
-    top: 100px;
-    left: 10px;
+    top: 120px;
+    left: -10px;
     padding: 15px;
 }
 
 .input-weight {
     margin: 70px 50px;
     position: absolute;
-    top: 200px;
-    left: 60px;
+    top: 220px;
+    left: 40px;
     padding: 15px;
+}
+
+.save-button {
+    margin: 70px 50px;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+    padding: 2px;
 }
 
 .input-age:focus {

@@ -9,34 +9,51 @@ import Jumbotron from './Jumbotron';
 class PlanetList extends Component {
     constructor(props){
         super(props);
-        this.state = {age: null, weight: 0}
+        this.state = {age: null, weight: null, finalAge: null, finalWeight: null};
+
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.setState({age: '', weight: '', finalAge: this.state.age, finalWeight: this.state.weight});
+      }
 
     render(){
         const planetNames = this.props.planets.map((planet, index) => (
             <Planet 
                 key={index} 
                 data={planet}
-                age={this.state.age}
-                weight={this.state.weight}
+                age={this.state.finalAge}
+                weight={this.state.finalWeight}
             />
         ));
         return(
             <div>
                 <Jumbotron />
-                
-                <input 
-                    placeholder="Enter your Age"
-                    type="text"
-                    className="input-age"
-                    onChange={(e) => this.setState({age: this.props.getNumber(e.target.value)})}
-                />
-                <input 
-                    placeholder="Enter your weight"
-                    type="number"
-                    className="input-weight"
-                    onChange={(e) =>this.setState({weight: e.target.value})}
-                />
+                <form onSubmit={this.handleSubmit}>
+                    <input 
+                        placeholder="Enter your Age"
+                        type="text"
+                        value={this.state.age}
+                        className="input-age"
+                        onChange={(e) => this.setState({age: this.props.getNumber(e.target.value)})}
+                    />
+                    <input 
+                        placeholder="Enter your weight"
+                        type="number"
+                        value={this.state.weight}
+                        className="input-weight"
+                        onChange={(e) =>this.setState({weight: e.target.value})}
+                    />
+                    <button 
+                        // onClick={this.setState({age: this.props.getNumber(e.target.value)})}
+                        type="submit"
+                        className="save-button"
+                     >
+                        Let's Find Out!
+                </button>
+        </form>
                 
                 <ul className="planets">
                    {planetNames}

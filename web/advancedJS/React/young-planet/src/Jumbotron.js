@@ -4,7 +4,9 @@ import './Jumbotron.css';
 function Jumbotron() {
     return (
         <div class="jumbotron">
-            <h1>Welcome to Space Age</h1>
+            <h1>Space Age</h1>
+            <div className="first-text"><em>"Wonder what your age is in Mercury?"</em></div>
+            <div className="second-text"><em>"Or your weight in Jupiter?"</em></div>
             <div class="star sun"></div>
             <div class="plan mercury"></div>
             <div class="plan venus"></div>
