@@ -17,7 +17,26 @@ h1 {
     top: 10px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 3;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        display: none;
+    }
+
+    .plan, 
+    .star {
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        top: calc(30% - var(--size) /2);
+        left: calc(50% - var(--size) /2);
+        border-radius: 50%;
+    
+    }
+
+  }
 
 .plan,
 .star {

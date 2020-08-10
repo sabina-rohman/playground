@@ -5,7 +5,7 @@
     grid-auto-rows: auto;
     grid-gap: 2rem;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
     font-family: sans-serif;
     
 }
@@ -37,16 +37,28 @@
     display: block;
 }
 
-.age {
-    margin: 50px 50px;
+.input-age {
+    margin: 100px 100px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    padding: 15px;
 }
 
-.age:focus {
+.input-weight {
+    margin: 70px 50px;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    padding: 15px;
+}
+
+.input-age:focus {
     color: rebeccapurple;
     font-weight: 100px;
 }
 
-.weight:focus {
+.input-weight:focus {
     color: rebeccapurple;
     font-weight: 100px;
 }

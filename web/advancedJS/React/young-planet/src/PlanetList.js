@@ -24,16 +24,17 @@ class PlanetList extends Component {
         return(
             <div>
                 <Jumbotron />
+                
                 <input 
                     placeholder="Enter your Age"
                     type="text"
-                    className="age"
+                    className="input-age"
                     onChange={(e) => this.setState({age: this.props.getNumber(e.target.value)})}
                 />
                 <input 
                     placeholder="Enter your weight"
                     type="number"
-                    className="weight"
+                    className="input-weight"
                     onChange={(e) =>this.setState({weight: e.target.value})}
                 />
                 
