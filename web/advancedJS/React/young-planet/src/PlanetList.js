@@ -4,6 +4,7 @@ import Planet from './Planet';
 import './Planet.css'
 import mercuryImg from './images/mercury.jpg'
 import saturnImg from './images/saturn.jpg'
+import Jumbotron from './Jumbotron';
 
 class PlanetList extends Component {
     constructor(props){
@@ -21,7 +22,8 @@ class PlanetList extends Component {
             />
         ));
         return(
-            <div >
+            <div>
+                <Jumbotron />
                 <input 
                     placeholder="Enter your Age"
                     type="text"
