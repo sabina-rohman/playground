@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 function Planet(props){
     return(
     <div className="planet" >
-        <img className="planet-img" src={props.data.image}/>
+        <img className="planet-img" src={props.data.image} alt="planet" />
         <div className="planet-content">
             <div className="planet-name">{props.data.name}</div>
             <p className="planet-age">{props.planetAge(props.data.earthYears, props.age)} Year(s)</p>

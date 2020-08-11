@@ -75,7 +75,7 @@ class PlanetList extends Component {
 
 PlanetList.defaultProps = {
     planets : [{name: 'mercury', earthYears: 0.2408467, earthWeight: 0.378, image: mercuryImg},
-                {name: 'venus', earthYears: 0.61519726, earthWeight: 0.907, image: mercuryImg}, 
+                {name: 'venus', earthYears: 0.61519726, earthWeight: 0.907}, 
                 {name: 'earth', earthYears: 1.0, earthWeight: 1, image: mercuryImg}, 
                 {name: 'mars', earthYears: 1.8808158, earthWeight: 0.377, image: mercuryImg}, 
                 {name: 'jupiter', earthYears: 11.862615, earthWeight: 0.2528, image: mercuryImg}, 

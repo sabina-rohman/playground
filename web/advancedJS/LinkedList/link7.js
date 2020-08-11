@@ -1,19 +1,19 @@
 class LinkedList {
     constructor(){
+        this.head = null;
         this.length = 0;
-        this.head = null
+    }
+
+    isEmpty(){
+        return this.length === 0;
     }
 
     size(){
         return this.length;
     }
 
-    head(){
-        return this.head;
-    }
-
     add(element){
-        const node = new Node(element);
+        let node = Node(element);
         if(this.head === null){
             this.head = node;
         } else {
@@ -23,7 +23,7 @@ class LinkedList {
             }
             currentNode.next = node;
         }
-        this.length++
+        this.length++;
     }
 
     addAt(index, element){
@@ -37,7 +37,7 @@ class LinkedList {
             node.next = currentNode;
             this.head = node;
         } else {
-            while(index > currentIndex){
+            while(currentIndex < index){
                 currentIndex++;
                 previousNode = currentNode;
                 currentNode = currentNode.next;
@@ -45,14 +45,12 @@ class LinkedList {
             node.next = currentNode;
             previousNode.next = node;
         }
-        this.length++;
     }
 
     remove(){
         if(this.length === 0){
             return false;
-        }
-        if(this.length === 1){
+        } else if(this.length === 1){
             this.head = null;
         } else {
             let currentNode = this.head;
@@ -61,17 +59,18 @@ class LinkedList {
                 previousNode = currentNode;
                 currentNode = currentNode.next;
             }
+
             previousNode.next = currentNode.next;
         }
-        this.length--
+        this.length--;
         return true;
     }
 
-    removeEl(element){
+    removeElement(element){
         if(this.length === 0){
             return false;
-        } else if(this.head.element === element){
-            this.head = this.head.next
+        } else if(this.length === 1){
+            this.head = null;
         } else {
             let currentNode = this.head;
             let previousNode;
@@ -79,10 +78,12 @@ class LinkedList {
                 previousNode = currentNode;
                 currentNode = currentNode.next;
             }
-            previousNode.next = currentNode.next;
-            this.length--
-            return true;
+            if(currentNode.element === element){
+                previousNode.next = currentNode.next;
+            }
+            
         }
+        this.length--;
     }
 
     removeAt(index, element){
@@ -92,11 +93,9 @@ class LinkedList {
             this.head = this.head.next;
         } else {
             let currentNode = this.head;
-            let currentIndex = 0;
             let previousNode;
-
+            let currentIndex = 0;
             while(currentIndex < index){
-                currentIndex++;
                 previousNode = currentNode;
                 currentNode = currentNode.next;
             }
@@ -108,18 +107,17 @@ class LinkedList {
         return currentNode.element;
     }
 
-    isEmpty(){
-        return this.length === 0;
-    }
-
     indexOf(element){
         let index = -1;
-        if(this.length === 0) {
+        
+        if(this.length === 0){
             return -1;
         } else {
             let currentNode = this.head;
+            this.previousNode;
             while(currentNode.element !== element){
                 index++;
+                previousNode = currentNode;
                 currentNode = currentNode.next;
             }
             if(currentNode.element === element){
@@ -133,34 +131,22 @@ class LinkedList {
         if(this.length === 0){
             return false;
         } else {
-            let count = 0;
+            let currentIndex = 0;
             let currentNode = this.head;
-            while(count < index){
-                index++;
-                currentNode = currentNode.next;
+            let previousNode;
+            while(currentIndex < index){
+                currentNode = currentNode.next
             }
             return currentNode.element;
         }
+        
     }
+
 }
 
 class Node {
-    constructor(element) {
+    constructor(element){
         this.element = element;
-        this.next = null;
+        this.next = null
     }
 }
-const l = new LinkedList();
-
-l.add('tomato');
-l.add('potato');
-l.add('blueberry');
-l.add('papaya');
-l.remove();
-l.add('onion')
-l.addAt(2, 'banana')
-console.log(l.elementOf(2));
-console.log(l.size());
-// console.log(l.head());
-// const n = new Node('potato');
-// console.log(n.element);
