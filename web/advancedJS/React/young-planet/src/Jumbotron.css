@@ -56,7 +56,7 @@ h1 {
     position: absolute;
     width: var(--size);
     height: var(--size);
-    top: calc(50% - var(--size) /2);
+    top: calc(30% - var(--size) /2);
     left: calc(60% - var(--size) /2);
     border-radius: 50%;
 
