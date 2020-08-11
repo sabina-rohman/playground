@@ -34,11 +34,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: papayawhip;
+    /* background-color: papayawhip;
     opacity: 0.2;
     height: 414px;
     width: 278px;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in; */
     color: white;
     font-size: 2em;
     text-transform: uppercase;

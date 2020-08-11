@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100%;
     background: linear-gradient(black, rgba(0, 0, 0, 0.7));
+    background-image: url(./starImages/star1.png);
     display: flex;
     align-items: center;
     justify-content: end;
