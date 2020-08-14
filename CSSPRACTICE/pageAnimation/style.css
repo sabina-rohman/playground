@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 80%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
 
 .slider {
     position: absolute;
@@ -31,12 +55,12 @@ nav {
     justify-self: end;
 }
 
-section{
+.first-section{
     display: flex;
     height: 80vh;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 120px;
 }
 
 .hero {
@@ -72,7 +96,92 @@ section{
     opacity: 0.5;
 }
 
-.second {
-    margin-top: 20px;
-    text-align: center;
+h2 {
+    font-family: 'Sacramento', cursive;
+    font-size:3rem;
+  }
+  
+span {
+    font-family: 'Nunito', sans-serif;
+    font-weight:400;
+    font-size:1.5rem;
 }
+
+
+@media (max-width:1100px){
+    #header h1 {
+      font-size:3rem;
+    }
+    #header span {
+      font-size:1.5rem;
+    }
+  
+    #presentation p {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 0.85rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+}  
+
+@media (max-width:992){
+    #presentation h2 {
+      font-family: 'Sacramento', cursive;
+      font-size:5rem;
+    }
+  
+    h2{
+      font-size:3rem;
+    }
+    
+    #presentation span {
+      font-family: 'Nunito', sans-serif;
+      font-weight:400;
+      font-size:2.5rem;
+    }
+  
+  }
+
+
+#car-section img{
+   height: 100%;
+   width: 100%;
+   max-width: 100%;
+}
+
+#car-section .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EDEAE5;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .7s ease;
+}
+
+#car-section .text {
+  color: black;
+  opacity: 1.0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#car-section .container-img:hover .overlay {
+    height: 100%;
+  }
+  
+
