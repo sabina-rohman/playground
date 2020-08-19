@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Boxes from './ColorBoxesWedding/Boxes';
+import Amazon from './Amazon/Amazon';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-  }
 
   render() {
     return (
       <div className="App">
-        <Boxes />
+       <Amazon />
       </div>
     )
   }
