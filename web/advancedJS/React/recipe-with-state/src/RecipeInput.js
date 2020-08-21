@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './RecipeInput.css';
 
 class RecipeInput extends Component {
-  static defaultProps = {
-    onClose() {},
-    onSave() {}
-  }
   
   constructor(props) {
     super(props);
@@ -41,7 +37,10 @@ class RecipeInput extends Component {
   
   handleSubmit(e) {
     e.preventDefault();
+    // invoke onSave with all the values of the form that it currently has
+    // invoking onSave and passing in all the copies of values in state
     this.props.onSave({...this.state});
+    // clear out all data on the form so there is space for more data on the form when you create a new recipe
     this.setState({
       title: '',
       instructions: '',
@@ -102,7 +101,6 @@ class RecipeInput extends Component {
           >
             Instructions
           </label>
-
           <textarea
             key='instructions'
             id='recipe-instructions-input'
@@ -114,8 +112,10 @@ class RecipeInput extends Component {
             value={instructions}
             onChange={this.handleChange}
             />
+
             
           {ingredientsInputs}
+          
           
           <button
             type="button"
@@ -150,6 +150,11 @@ class RecipeInput extends Component {
       </div>
     )
   }
+}
+
+RecipeInput.defaultProps = {
+  onClose() {},
+  onSave() {}
 }
 
 export default RecipeInput;

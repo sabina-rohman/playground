@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Amazon from './Amazon/Amazon';
+import BookShop from './BookShop/BookShop';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-       <Amazon />
+       <BookShop />
       </div>
     )
   }
