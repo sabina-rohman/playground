@@ -3,7 +3,7 @@ import './Recipe.css';
 import PropTypes from 'prop-types';
 
 function Recipe(props) {
-    const {title, img, instructions} = props;
+    const {title, img, instructions, id, onDelete} = props;
     // short way of saying => const title = props.title;
     const ingredients = props.ingredients.map((ing, index) => (
         <li key={index}>{ing}</li>
@@ -21,20 +21,22 @@ function Recipe(props) {
                 </ul>
                 <h4>Instructions:</h4>
                 <p>{instructions}</p>
+                <button type="button"
+                        onClick={() => onDelete(id)}
+                >
+                DELETE</button>
             </div>
         </div>
      );
-}
-
-Recipe.defaultProps = {
-    title: "Food"
 }
 
 Recipe.propTypes = {
     title: PropTypes.string.isRequired,
     ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
     instructions: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired
+    img: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    onDelete: PropTypes.func.isRequired
 }
 
 export default Recipe;

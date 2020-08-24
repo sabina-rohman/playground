@@ -37,11 +37,12 @@ class RecipeApp extends Component {
     }
 
     this.handleSave = this.handleSave.bind(this);
+    this.onDelete = this.onDelete.bind(this);
   }
 
   handleSave(recipe) {
     // we call setState to add new recipe to the recipes array and update the nextRecipeId
-    // use update function becase nextRecipeId depends on prvious recipe id
+    // use update function becase nextRecipeId depends on previous recipe id
     this.setState((prevState, props) => {
       // it gets the recipe from onSave() invokation
       const newRecipe = {...recipe, id: this.state.nextRecipeId}
@@ -54,10 +55,17 @@ class RecipeApp extends Component {
     })
   }
 
+  onDelete(id){
+    const recipes = this.state.recipes.filter(r => r.id !== id );
+    this.setState({recipes});
+  }
+
   render(){
     const {showForm} = this.state;
     return (
       <div className="App">
+        {/* when the link in the navbar component is clicked the state in the App.js component can change */}
+        {/* so we need to pass a callback function to the Navbar component inside a curly brackets */}
         <Navbar onNewRecipe={() => this.setState({showForm: true})} />
 
         {/* pass the method handleSave inside RecipeInput Component as a prop */}
@@ -67,7 +75,10 @@ class RecipeApp extends Component {
                 onClose={() => this.setState({showForm: false})}
                /> : null}
               
-        <RecipeList recipes={this.state.recipes} />
+        <RecipeList 
+          recipes={this.state.recipes} 
+          onDelete={this.onDelete}
+        />
       </div>
     );
   }
