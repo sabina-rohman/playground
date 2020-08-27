@@ -22,7 +22,7 @@ class RecipeInput extends Component {
     this.setState({[e.target.name]: e.target.value});
   }
   
-  handleNewIngredient(e) {
+  handleNewIngredient() {
     const {ingredients} = this.state;
     this.setState({ingredients: [...ingredients, '']});
   }
@@ -73,7 +73,6 @@ class RecipeInput extends Component {
     return (
       <div className="recipe-form-container">
         <form className='recipe-form' onSubmit={this.handleSubmit}>
-
           <button
             type="button"
             className="close-button"

@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+header h2{
+    text-align: center;
+    margin-left: 15px;
+}
+
+header nav{
+    display: flex;
+    list-style: none;
+
+}
+
+header nav li{
+    margin:0 15px;
+    text-decoration-style: dotted;
+    color: inherit;
+    opacity:0.8;
+    cursor: pointer;
+}
+
+header nav li:hover{
+    opacity: 1;
+}
