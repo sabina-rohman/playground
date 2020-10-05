@@ -1,0 +1,2 @@
+export PATH=$PATH:/home/sabina/dotnet
+echo "PATH=$PATH:/home/sabina/dotnet; export PATH" >> ~/.profile; . ~/.profile

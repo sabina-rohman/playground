@@ -1,0 +1,13 @@
+1. Create a soln file.
+
+2. You can open in VS Code.
+
+3. Add a project file to the soln.
+
+4. Add cs file to the project.
+
+5. Extension names:
+	
+	a.) Soln file: .sln
+	b.) Project file: .csproj
+	c.) Actual code: .cs
