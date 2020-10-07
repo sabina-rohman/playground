@@ -29,9 +29,9 @@ class Cards extends Component {
         this.state = {cards};
       }
 
-    handleClick(id){
-       const selectedCard = this.state.cards.filter(c => c.id === id)[0];
-
+    handleClick(selectedCard){
+        // if passing id as parameter we can find the card in cards array using the given id.
+        //    const selectedCard = this.state.cards.filter(c => c.id === id)[0];
        if(selectedCard.cardState === CardState.MATCHING){
             return;
        }else if(selectedCard.cardState === CardState.SHOWING){
@@ -42,7 +42,7 @@ class Cards extends Component {
         // map items in x
         const newState = oldState.map(c => {
              // if id not equal to card id return as it is.
-            if(c.id === id){
+            if(c.id === selectedCard.id){
                 return {...c, cardState: CardState.SHOWING}
             } else {
                 return c;
@@ -57,7 +57,7 @@ class Cards extends Component {
         const cardComponents = this.state.cards.map((card) => (
             <Card 
                 key={card.id} 
-                onClick={() => this.handleClick(card.id)}
+                onClick={() => this.handleClick(card)}
                 {...card}
              />
         ))

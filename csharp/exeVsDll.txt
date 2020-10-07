@@ -1,0 +1,13 @@
+//can't pass void into Console.WriteLine
+Console.WriteLine expects a string.
+
+*******
+
+When cs project is compiled, it is either compiled into exe file or dll(dynamic linked library) file.
+
+A projet consist of a bunch of files.
+
+When you create a peoject you have to explicitly tell what kind of project you're creating: a exe / a dll
+
+1..console project -compiles into- console application(executable/exe)
+2..library project -compiles into- dll file
