@@ -4,17 +4,19 @@ public interface IVehicle
 {
 	//in interface everything is public;
 	//can't have private 
-	string Name{get; set;}
+	string Name
+	{get; set;}
 }
 
 public class Car : IVehicle
 {
-	private string name;
+	// private string name;
 	public string Name
-	{
-		get{return name; }
-		set{name = value; }
-	}
+	{get; set; }
+	// {
+	// 	get{return name; }
+	// 	set{name = value; }
+	// }
 }
 
 public class Truck : IVehicle
@@ -33,6 +35,7 @@ public class Program
 	{
 		Car volvo = new Car() {Name="volvo"};
 		Truck tata =  new Truck() {Name="tata"};
+		tata.Name = "d"
 		Print(volvo);
 		Print(tata);
 	}
